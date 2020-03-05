@@ -1,0 +1,207 @@
+#Phase space actor
+/gate/actor/addActor PhaseSpaceActor               frite_colli_before_phasespaceactor
+/gate/actor/frite_colli_before_phasespaceactor/save                     output/frite_colli_before_phasespaceactor.root
+/gate/actor/frite_colli_before_phasespaceactor/attachTo                 frite_colli_before
+/gate/actor/frite_colli_before_phasespaceactor/enableProductionProcess  false
+
+/gate/actor/frite_colli_before_phasespaceactor/enableEkine              true
+/gate/actor/frite_colli_before_phasespaceactor/enableXPosition          true
+/gate/actor/frite_colli_before_phasespaceactor/enableYPosition          true
+/gate/actor/frite_colli_before_phasespaceactor/enableZPosition          true
+/gate/actor/frite_colli_before_phasespaceactor/enableXDirection         false
+/gate/actor/frite_colli_before_phasespaceactor/enableYDirection         false
+/gate/actor/frite_colli_before_phasespaceactor/enableZDirection         false
+/gate/actor/frite_colli_before_phasespaceactor/enableProductionVolume   true
+/gate/actor/frite_colli_before_phasespaceactor/enableProductionProcess  true
+/gate/actor/frite_colli_before_phasespaceactor/enableParticleName       true
+/gate/actor/frite_colli_before_phasespaceactor/enableWeight             false
+/gate/actor/frite_colli_before_phasespaceactor/addFilter                       particleFilter
+/gate/actor/frite_colli_before_phasespaceactor/particleFilter/addParticle      proton
+
+#Phase space actor
+/gate/actor/addActor PhaseSpaceActor              frite_colli_after_phasespaceactor
+/gate/actor/frite_colli_after_phasespaceactor/save                     output/frite_colli_after_phasespaceactor.root
+/gate/actor/frite_colli_after_phasespaceactor/attachTo                 frite_colli_after
+/gate/actor/frite_colli_after_phasespaceactor/enableProductionProcess  false
+
+/gate/actor/frite_colli_after_phasespaceactor/enableEkine              true
+/gate/actor/frite_colli_after_phasespaceactor/enableXPosition          true
+/gate/actor/frite_colli_after_phasespaceactor/enableYPosition          true
+/gate/actor/frite_colli_after_phasespaceactor/enableZPosition          true
+/gate/actor/frite_colli_after_phasespaceactor/enableXDirection         true
+/gate/actor/frite_colli_after_phasespaceactor/enableYDirection         true
+/gate/actor/frite_colli_after_phasespaceactor/enableZDirection         true
+/gate/actor/frite_colli_after_phasespaceactor/enableProductionVolume   true
+/gate/actor/frite_colli_after_phasespaceactor/enableProductionProcess  true
+/gate/actor/frite_colli_after_phasespaceactor/enableParticleName       true
+/gate/actor/frite_colli_after_phasespaceactor/enableWeight             true
+/gate/actor/frite_colli_after_phasespaceactor/addFilter                       particleFilter
+/gate/actor/frite_colli_after_phasespaceactor/particleFilter/addParticle      proton
+
+
+#Phase space actor
+/gate/actor/addActor PhaseSpaceActor              frite_cuivre_before_phasespaceactor
+/gate/actor/frite_cuivre_before_phasespaceactor/save                     output/frite_cuivre_before_phasespaceactor.root
+/gate/actor/frite_cuivre_before_phasespaceactor/attachTo                 frite_cuivre_before
+/gate/actor/frite_cuivre_before_phasespaceactor/enableProductionProcess  false
+
+/gate/actor/frite_cuivre_before_phasespaceactor/enableEkine              true
+/gate/actor/frite_cuivre_before_phasespaceactor/enableXPosition          true
+/gate/actor/frite_cuivre_before_phasespaceactor/enableYPosition          true
+/gate/actor/frite_cuivre_before_phasespaceactor/enableZPosition          true
+/gate/actor/frite_cuivre_before_phasespaceactor/enableXDirection         false
+/gate/actor/frite_cuivre_before_phasespaceactor/enableYDirection         false
+/gate/actor/frite_cuivre_before_phasespaceactor/enableZDirection         false
+/gate/actor/frite_cuivre_before_phasespaceactor/enableProductionVolume   true
+/gate/actor/frite_cuivre_before_phasespaceactor/enableProductionProcess  true
+/gate/actor/frite_cuivre_before_phasespaceactor/enableParticleName       true
+/gate/actor/frite_cuivre_before_phasespaceactor/enableWeight             false
+/gate/actor/frite_cuivre_before_phasespaceactor/addFilter                       particleFilter
+/gate/actor/frite_cuivre_before_phasespaceactor/particleFilter/addParticle      proton
+
+#Phase space actor
+/gate/actor/addActor PhaseSpaceActor             frite_cuivre_after_phasespaceactor
+/gate/actor/frite_cuivre_after_phasespaceactor/save                     output/frite_cuivre_after_phasespaceactor.root
+/gate/actor/frite_cuivre_after_phasespaceactor/attachTo                 frite_cuivre_after
+/gate/actor/frite_cuivre_after_phasespaceactor/enableProductionProcess  false
+
+/gate/actor/frite_cuivre_after_phasespaceactor/enableEkine              true
+/gate/actor/frite_cuivre_after_phasespaceactor/enableXPosition          true
+/gate/actor/frite_cuivre_after_phasespaceactor/enableYPosition          true
+/gate/actor/frite_cuivre_after_phasespaceactor/enableZPosition          true
+/gate/actor/frite_cuivre_after_phasespaceactor/enableXDirection         false
+/gate/actor/frite_cuivre_after_phasespaceactor/enableYDirection         false
+/gate/actor/frite_cuivre_after_phasespaceactor/enableZDirection         false
+/gate/actor/frite_cuivre_after_phasespaceactor/enableProductionVolume   true
+/gate/actor/frite_cuivre_after_phasespaceactor/enableProductionProcess  true
+/gate/actor/frite_cuivre_after_phasespaceactor/enableParticleName       true
+/gate/actor/frite_cuivre_after_phasespaceactor/enableWeight             false
+/gate/actor/frite_cuivre_after_phasespaceactor/addFilter                       particleFilter
+/gate/actor/frite_cuivre_after_phasespaceactor/particleFilter/addParticle      proton
+
+#Phase space actor
+/gate/actor/addActor PhaseSpaceActor             frite_DetecteurCharbel_before_phasespaceactor
+/gate/actor/frite_DetecteurCharbel_before_phasespaceactor/save                     output/frite_DetecteurCharbel_before_phasespaceactor.root
+/gate/actor/frite_DetecteurCharbel_before_phasespaceactor/attachTo                 frite_DetecteurCharbel_before
+/gate/actor/frite_DetecteurCharbel_before_phasespaceactor/enableProductionProcess  false
+
+/gate/actor/frite_DetecteurCharbel_before_phasespaceactor/enableEkine              true
+/gate/actor/frite_DetecteurCharbel_before_phasespaceactor/enableXPosition          true
+/gate/actor/frite_DetecteurCharbel_before_phasespaceactor/enableYPosition          true
+/gate/actor/frite_DetecteurCharbel_before_phasespaceactor/enableZPosition          true
+/gate/actor/frite_DetecteurCharbel_before_phasespaceactor/enableXDirection         false
+/gate/actor/frite_DetecteurCharbel_before_phasespaceactor/enableYDirection         false
+/gate/actor/frite_DetecteurCharbel_before_phasespaceactor/enableZDirection         false
+/gate/actor/frite_DetecteurCharbel_before_phasespaceactor/enableProductionVolume   true
+/gate/actor/frite_DetecteurCharbel_before_phasespaceactor/enableProductionProcess  true
+/gate/actor/frite_DetecteurCharbel_before_phasespaceactor/enableParticleName       true
+/gate/actor/frite_DetecteurCharbel_before_phasespaceactor/enableWeight             false
+/gate/actor/frite_DetecteurCharbel_before_phasespaceactor/addFilter                       particleFilter
+/gate/actor/frite_DetecteurCharbel_before_phasespaceactor/particleFilter/addParticle      proton
+
+#Phase space actor
+/gate/actor/addActor PhaseSpaceActor             frite_DetecteurCharbel_after_phasespaceactor
+/gate/actor/frite_DetecteurCharbel_after_phasespaceactor/save                     output/frite_DetecteurCharbel_after_phasespaceactor.root
+/gate/actor/frite_DetecteurCharbel_after_phasespaceactor/attachTo                 frite_DetecteurCharbel_after
+/gate/actor/frite_DetecteurCharbel_after_phasespaceactor/enableProductionProcess  false
+
+/gate/actor/frite_DetecteurCharbel_after_phasespaceactor/enableEkine              true
+/gate/actor/frite_DetecteurCharbel_after_phasespaceactor/enableXPosition          true
+/gate/actor/frite_DetecteurCharbel_after_phasespaceactor/enableYPosition          true
+/gate/actor/frite_DetecteurCharbel_after_phasespaceactor/enableZPosition          true
+/gate/actor/frite_DetecteurCharbel_after_phasespaceactor/enableXDirection         false
+/gate/actor/frite_DetecteurCharbel_after_phasespaceactor/enableYDirection         false
+/gate/actor/frite_DetecteurCharbel_after_phasespaceactor/enableZDirection         false
+/gate/actor/frite_DetecteurCharbel_after_phasespaceactor/enableProductionVolume   true
+/gate/actor/frite_DetecteurCharbel_after_phasespaceactor/enableProductionProcess  true
+/gate/actor/frite_DetecteurCharbel_after_phasespaceactor/enableParticleName       true
+/gate/actor/frite_DetecteurCharbel_after_phasespaceactor/enableWeight             false
+/gate/actor/frite_DetecteurCharbel_after_phasespaceactor/addFilter                       particleFilter
+/gate/actor/frite_DetecteurCharbel_after_phasespaceactor/particleFilter/addParticle      proton
+
+
+
+
+#Phase space actor
+/gate/actor/addActor PhaseSpaceActor             frite_Tungsten_before_phasespaceactor
+/gate/actor/frite_Tungsten_before_phasespaceactor/save                     output/frite_Tungsten_before_phasespaceactor.root
+/gate/actor/frite_Tungsten_before_phasespaceactor/attachTo                 frite_Tungsten_before
+/gate/actor/frite_Tungsten_before_phasespaceactor/enableProductionProcess  false
+
+/gate/actor/frite_Tungsten_before_phasespaceactor/enableEkine              true
+/gate/actor/frite_Tungsten_before_phasespaceactor/enableXPosition          true
+/gate/actor/frite_Tungsten_before_phasespaceactor/enableYPosition          true
+/gate/actor/frite_Tungsten_before_phasespaceactor/enableZPosition          true
+/gate/actor/frite_Tungsten_before_phasespaceactor/enableXDirection         false
+/gate/actor/frite_Tungsten_before_phasespaceactor/enableYDirection         false
+/gate/actor/frite_Tungsten_before_phasespaceactor/enableZDirection         false
+/gate/actor/frite_Tungsten_before_phasespaceactor/enableProductionVolume   true
+/gate/actor/frite_Tungsten_before_phasespaceactor/enableProductionProcess  true
+/gate/actor/frite_Tungsten_before_phasespaceactor/enableParticleName       true
+/gate/actor/frite_Tungsten_before_phasespaceactor/enableWeight             false
+/gate/actor/frite_Tungsten_before_phasespaceactor/addFilter                       particleFilter
+/gate/actor/frite_Tungsten_before_phasespaceactor/particleFilter/addParticle      proton
+
+
+#Phase space actor
+/gate/actor/addActor PhaseSpaceActor             frite_Tungsten_after_phasespaceactor
+/gate/actor/frite_Tungsten_after_phasespaceactor/save                     output/frite_Tungsten_after_phasespaceactor.root
+/gate/actor/frite_Tungsten_after_phasespaceactor/attachTo                 frite_Tungsten_after
+/gate/actor/frite_Tungsten_after_phasespaceactor/enableProductionProcess  false
+
+/gate/actor/frite_Tungsten_after_phasespaceactor/enableEkine              true
+/gate/actor/frite_Tungsten_after_phasespaceactor/enableXPosition          true
+/gate/actor/frite_Tungsten_after_phasespaceactor/enableYPosition          true
+/gate/actor/frite_Tungsten_after_phasespaceactor/enableZPosition          true
+/gate/actor/frite_Tungsten_after_phasespaceactor/enableXDirection         false
+/gate/actor/frite_Tungsten_after_phasespaceactor/enableYDirection         false
+/gate/actor/frite_Tungsten_after_phasespaceactor/enableZDirection         false
+/gate/actor/frite_Tungsten_after_phasespaceactor/enableProductionVolume   true
+/gate/actor/frite_Tungsten_after_phasespaceactor/enableProductionProcess  true
+/gate/actor/frite_Tungsten_after_phasespaceactor/enableParticleName       true
+/gate/actor/frite_Tungsten_after_phasespaceactor/enableWeight             false
+/gate/actor/frite_Tungsten_after_phasespaceactor/addFilter                       particleFilter
+/gate/actor/frite_Tungsten_after_phasespaceactor/particleFilter/addParticle      proton
+
+
+
+
+#Phase space actor
+/gate/actor/addActor PhaseSpaceActor             frite_kapton_phasespaceactor
+/gate/actor/frite_kapton_phasespaceactor/save                     output/frite_kapton_phasespaceactor.root
+/gate/actor/frite_kapton_phasespaceactor/attachTo                 kapton
+/gate/actor/frite_kapton_phasespaceactor/enableProductionProcess  false
+
+/gate/actor/frite_kapton_phasespaceactor/enableEkine              true
+/gate/actor/frite_kapton_phasespaceactor/enableXPosition          true
+/gate/actor/frite_kapton_phasespaceactor/enableYPosition          true
+/gate/actor/frite_kapton_phasespaceactor/enableZPosition          true
+/gate/actor/frite_kapton_phasespaceactor/enableXDirection         false
+/gate/actor/frite_kapton_phasespaceactor/enableYDirection         false
+/gate/actor/frite_kapton_phasespaceactor/enableZDirection         false
+/gate/actor/frite_kapton_phasespaceactor/enableProductionVolume   true
+/gate/actor/frite_kapton_phasespaceactor/enableProductionProcess  true
+/gate/actor/frite_kapton_phasespaceactor/enableParticleName       true
+/gate/actor/frite_kapton_phasespaceactor/enableWeight             false
+/gate/actor/frite_kapton_phasespaceactor/addFilter                       particleFilter
+/gate/actor/frite_kapton_phasespaceactor/particleFilter/addParticle      proton
+
+#Phase space actor
+/gate/actor/addActor PhaseSpaceActor             frite_Kapton_after_phasespaceactor
+/gate/actor/frite_Kapton_after_phasespaceactor/save                     output/frite_Kapton_after_phasespaceactor.root
+/gate/actor/frite_Kapton_after_phasespaceactor/attachTo                 frite_Kapton_after
+/gate/actor/frite_Kapton_after_phasespaceactor/enableProductionProcess  false
+
+/gate/actor/frite_Kapton_after_phasespaceactor/enableEkine              true
+/gate/actor/frite_Kapton_after_phasespaceactor/enableXPosition          true
+/gate/actor/frite_Kapton_after_phasespaceactor/enableYPosition          true
+/gate/actor/frite_Kapton_after_phasespaceactor/enableZPosition          true
+/gate/actor/frite_Kapton_after_phasespaceactor/enableXDirection         false
+/gate/actor/frite_Kapton_after_phasespaceactor/enableYDirection         false
+/gate/actor/frite_Kapton_after_phasespaceactor/enableZDirection         false
+/gate/actor/frite_Kapton_after_phasespaceactor/enableProductionVolume   true
+/gate/actor/frite_Kapton_after_phasespaceactor/enableProductionProcess  true
+/gate/actor/frite_Kapton_after_phasespaceactor/enableParticleName       true
+/gate/actor/frite_Kapton_after_phasespaceactor/enableWeight             false
+/gate/actor/frite_Kapton_after_phasespaceactor/addFilter                       particleFilter
+/gate/actor/frite_Kapton_after_phasespaceactor/particleFilter/addParticle      proton

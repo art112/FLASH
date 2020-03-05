@@ -1,0 +1,147 @@
+#KAPTON
+
+#=======
+
+/gate/world/daughters/name kapton
+
+/gate/world/daughters/insert box
+
+
+
+/gate/kapton/setMaterial Kapton
+
+
+
+/gate/kapton/geometry/setXLength 5. cm
+
+/gate/kapton/geometry/setYLength 5. cm
+
+/gate/kapton/geometry/setZLength 75000. nm
+
+
+
+
+
+/gate/kapton/vis/setColor yellow
+
+#/gate/kapton/vis/forceWireframe
+
+/gate/kapton/vis/forceSolid
+
+
+
+
+
+#TRANSLATION à partir du centre du volume
+
+/gate/kapton/placement/setTranslation 0. 0. 37500. nm
+
+
+
+
+
+#TUNGSTENE
+
+#=======
+
+#/gate/world/daughters/name tungsten
+
+#/gate/world/daughters/insert box
+
+#
+
+#/gate/tungsten/setMaterial Tungsten
+
+#
+
+#/gate/tungsten/geometry/setXLength 6. cm
+
+#/gate/tungsten/geometry/setYLength 6. cm
+
+#/gate/tungsten/geometry/setZLength 25000. nm
+
+#
+
+#/gate/tungsten/vis/setColor red
+
+##/gate/tungsten/vis/forceWireframe
+
+#/gate/tungsten/vis/forceSolid
+
+#
+
+##TRANSLATION à partir du centre du volume
+
+#/gate/tungsten/placement/setTranslation 0. 0. 87500. nm
+
+#
+
+#
+
+#
+
+
+
+#COLLIMATEUR 1
+
+#==============
+
+#/gate/world/daughters/name colli1
+
+#/gate/world/daughters/insert box
+
+
+
+#/gate/colli1/setMaterial Aluminium
+
+
+
+#/gate/colli1/geometry/setXLength 10. cm
+
+#/gate/colli1/geometry/setYLength 10. cm
+
+#/gate/colli1/geometry/setZLength 25. mm
+
+
+
+#/gate/colli1/vis/setColor grey
+
+#/gate/colli1/vis/forceSolid
+
+
+
+
+
+#TRANSLATION à partir du centre du volume
+
+#/gate/colli1/placement/setTranslation 0. 0. 12575000. nm
+
+
+
+#TROU colli1
+
+#===========
+
+#/gate/colli1/daughters/name trou1
+
+#/gate/colli1/daughters/insert cylinder
+
+
+
+#/gate/trou1/setMaterial Air
+
+
+
+#/gate/trou1/geometry/setRmin 0. cm
+
+#/gate/trou1/geometry/setRmax 6. mm
+
+#/gate/trou1/geometry/setHeight 25. mm
+
+
+
+
+
+#/gate/trou1/vis/setColor black
+
+#/gate/trou1/vis/forceSolid

@@ -1,0 +1,155 @@
+
+#====================================================================
+#====================================================================
+# -----------------------------------------------------
+# Bride + fenetre kapton
+#================================================
+/gate/world/daughters/name   BeamPipe
+/gate/world/daughters/insert        cylinder
+/gate/BeamPipe/setMaterial  G4_STAINLESS-STEEL
+/gate/BeamPipe/geometry/setRmin          2.5 cm
+/gate/BeamPipe/geometry/setRmax          3.0 cm
+/gate/BeamPipe/geometry/setHeight         10.0 cm
+/gate/BeamPipe/geometry/setPhiStart        0 deg
+/gate/BeamPipe/geometry/setDeltaPhi      360 deg
+/gate/BeamPipe/placement/setTranslation 0. 0. -5.0 cm
+/gate/BeamPipe/vis/setColor grey
+/gate/BeamPipe/vis/forceSolid true
+
+/gate/BeamPipe/daughters/name   Inside_BeamPipe
+/gate/BeamPipe/daughters/insert        cylinder
+/gate/Inside_BeamPipe/setMaterial                Vacuum
+/gate/Inside_BeamPipe/geometry/setRmin          0.0 cm
+/gate/Inside_BeamPipe/geometry/setRmax          2.5 cm
+/gate/Inside_BeamPipe/geometry/setHeight         10.0 cm
+/gate/Inside_BeamPipe/geometry/setPhiStart        0 deg
+/gate/Inside_BeamPipe/geometry/setDeltaPhi      360 deg
+/gate/Inside_BeamPipe/placement/setTranslation 0. 0. 0 cm
+/gate/Inside_BeamPipe/vis/setColor white
+/gate/Inside_BeamPipe/vis/forceSolid true
+
+
+#KAPTON - collé a la source = fenêtre de sortie
+#================================================
+#/gate/BeamPipe/daughters/name kapton
+#/gate/BeamPipe/daughters/insert box
+#/gate/kapton/setMaterial G4_KAPTON
+#/gate/kapton/geometry/setXLength 5. cm
+#/gate/kapton/geometry/setYLength 5. cm
+#/gate/kapton/geometry/setZLength 0.075 mm
+#/gate/kapton/vis/setColor yellow
+#/gate/kapton/vis/forceWireframe
+#/gate/kapton/vis/forceSolid
+#/gate/kapton/placement/setTranslation 0. 0. 0.0375 mm
+
+/gate/world/daughters/name   kapton
+/gate/world/daughters/insert        cylinder
+/gate/kapton/setMaterial                G4_KAPTON
+/gate/kapton/geometry/setRmin          0.0 cm
+/gate/kapton/geometry/setRmax          2.5 cm
+/gate/kapton/geometry/setHeight         0.075 cm
+/gate/kapton/geometry/setPhiStart        0 deg
+/gate/kapton/geometry/setDeltaPhi      360 deg
+/gate/kapton/placement/setTranslation 0. 0. 0.0375 cm
+/gate/kapton/vis/setColor yellow
+/gate/kapton/vis/forceSolid true
+
+# -----------------------------------------------------
+#====================================================================
+#====================================================================
+
+
+
+
+
+#TUNGSTENE - pour éclater - homogénéiser - le faisceau - a 1cm du Kapton
+#========================================================
+/gate/world/daughters/name tungsten
+/gate/world/daughters/insert box
+/gate/tungsten/setMaterial G4_W
+/gate/tungsten/geometry/setXLength 6. cm
+/gate/tungsten/geometry/setYLength 6. cm
+/gate/tungsten/geometry/setZLength 0.0517 mm
+/gate/tungsten/vis/setColor red
+#/gate/tungsten/vis/forceWireframe
+/gate/tungsten/vis/forceSolid
+/gate/tungsten/placement/setTranslation 0. 0. 10.10085 mm
+
+
+#Detecteur Dose Charbel - contient deux ouvertures en alu
+#================================================
+/gate/world/daughters/name DetecteurCharbel
+/gate/world/daughters/insert box
+/gate/DetecteurCharbel/setMaterial G4_AIR
+/gate/DetecteurCharbel/geometry/setXLength 6. cm
+/gate/DetecteurCharbel/geometry/setYLength 6. cm
+/gate/DetecteurCharbel/geometry/setZLength 50.04 mm
+/gate/DetecteurCharbel/vis/setColor white
+/gate/DetecteurCharbel/vis/forceWireframe
+#/gate/DetecteurCharbel/vis/forceSolid
+/gate/DetecteurCharbel/placement/setTranslation 0. 0. 45.1467 mm
+
+
+#Aluminium - 2 couches de 20 micron espacé de 5cm en entrée et sortie du système PM  - 1cm après le tungsten
+#=============================================================================================================
+/gate/DetecteurCharbel/daughters/name Alu_in
+/gate/DetecteurCharbel/daughters/insert box
+/gate/Alu_in/setMaterial G4_Al
+/gate/Alu_in/geometry/setXLength 6. cm
+/gate/Alu_in/geometry/setYLength 6. cm
+/gate/Alu_in/geometry/setZLength 0.020 mm
+/gate/Alu_in/vis/setColor gray
+#/gate/Alu_in/vis/forceWireframe
+/gate/Alu_in/vis/forceSolid
+/gate/Alu_in/placement/setTranslation 0. 0. -25.01 mm
+
+/gate/DetecteurCharbel/daughters/name Alu_out
+/gate/DetecteurCharbel/daughters/insert box
+/gate/Alu_out/setMaterial G4_Al
+/gate/Alu_out/geometry/setXLength 6. cm
+/gate/Alu_out/geometry/setYLength 6. cm
+/gate/Alu_out/geometry/setZLength 0.020 mm
+/gate/Alu_out/vis/setColor gray
+#/gate/Alu_out/vis/forceWireframe
+/gate/Alu_out/vis/forceSolid
+/gate/Alu_out/placement/setTranslation 0. 0. 25.01 mm
+
+
+
+#2 micron de cuivre avant le colli pour monitorer les RX - 1cm avant le colli 
+#=============================================================================
+/gate/world/daughters/name Cuivre
+/gate/world/daughters/insert box
+/gate/Cuivre/setMaterial G4_Cu
+/gate/Cuivre/geometry/setXLength 20. cm
+/gate/Cuivre/geometry/setYLength 20. cm
+/gate/Cuivre/geometry/setZLength 0.002 mm
+/gate/Cuivre/vis/setColor red
+#/gate/Cuivre/vis/forceWireframe
+/gate/Cuivre/vis/forceSolid true
+/gate/Cuivre/placement/setTranslation 0. 0. 161. cm
+
+#COLLIMATEUR 1 collé à la cible
+#================================
+/gate/world/daughters/name colli1
+/gate/world/daughters/insert box
+/gate/colli1/setMaterial G4_Al
+/gate/colli1/geometry/setXLength 20. cm
+/gate/colli1/geometry/setYLength 20. cm
+/gate/colli1/geometry/setZLength 2.5 cm
+/gate/colli1/vis/setColor grey
+/gate/colli1/vis/forceSolid true
+/gate/colli1/placement/setTranslation 0. 0. 163.75 cm
+
+#TROU colli1
+#===========
+/gate/colli1/daughters/name trou1
+/gate/colli1/daughters/insert cylinder
+/gate/trou1/setMaterial G4_AIR
+/gate/trou1/geometry/setRmin 0. cm
+/gate/trou1/geometry/setRmax 0.5 cm
+/gate/trou1/geometry/setHeight 2.5 cm
+/gate/trou1/vis/setColor white
+/gate/trou1/vis/forceSolid true
+
+

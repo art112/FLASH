@@ -1,0 +1,26 @@
+#====================================================================
+#====================================================================
+# -----------------------------------------------------
+# Systeme Detection Apres Ligne  
+# V1 Cube_After de PMMA
+#================================================
+
+
+# Cube_After
+#================================================
+
+/gate/world/daughters/name Cube_After
+/gate/world/daughters/insert box
+/gate/Cube_After/setMaterial G4_PLEXIGLASS
+/gate/Cube_After/geometry/setXLength 20. cm
+/gate/Cube_After/geometry/setYLength 20. cm
+/gate/Cube_After/geometry/setZLength 5. cm
+
+/gate/Cube_After/vis/setColor yellow
+#/gate/Cube_After/vis/forceWireframe
+/gate/Cube_After/vis/forceSolid
+
+#TRANSLATION à partir du centre du volume
+/gate/Cube_After/placement/setTranslation 0. 0. 167.6 cm
+
+

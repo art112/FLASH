@@ -1,0 +1,48 @@
+
+# Detecteur Silicium 50 micro
+#=============================================================================================================
+
+/gate/world/daughters/name Si_50
+/gate/world/daughters/insert        cylinder
+/gate/Si_50/setMaterial                G4_Si
+/gate/Si_50/geometry/setRmin          0.0 cm
+/gate/Si_50/geometry/setRmax          1.0 cm
+/gate/Si_50/geometry/setHeight         0.050 mm
+/gate/Si_50/geometry/setPhiStart        0 deg
+/gate/Si_50/geometry/setDeltaPhi      360 deg
+/gate/Si_50/placement/setTranslation 0. 0. 166. cm
+/gate/Si_50/vis/setColor grey
+/gate/Si_50/vis/forceSolid true
+
+# Detecteur Silicium 80 micro
+#=============================================================================================================
+
+/gate/world/daughters/name Si_80
+/gate/world/daughters/insert        cylinder
+/gate/Si_80/setMaterial                G4_Si
+/gate/Si_80/geometry/setRmin          0.0 cm
+/gate/Si_80/geometry/setRmax          1.0 cm
+/gate/Si_80/geometry/setHeight         0.080 mm
+/gate/Si_80/geometry/setPhiStart        0 deg
+/gate/Si_80/geometry/setDeltaPhi      360 deg
+/gate/Si_80/placement/setTranslation 0. 0. 166.5 cm
+/gate/Si_80/vis/setColor grey
+/gate/Si_80/vis/forceSolid true
+
+
+# Detecteur Silicium 300 micro
+#=============================================================================================================
+
+/gate/world/daughters/name   Si_300
+/gate/world/daughters/insert        cylinder
+/gate/Si_300/setMaterial                G4_Si
+/gate/Si_300/geometry/setRmin          0.0 cm
+/gate/Si_300/geometry/setRmax          1.0 cm
+/gate/Si_300/geometry/setHeight         0.300 mm
+/gate/Si_300/geometry/setPhiStart        0 deg
+/gate/Si_300/geometry/setDeltaPhi      360 deg
+/gate/Si_300/placement/setTranslation 0. 0. 167. cm
+/gate/Si_300/vis/setColor grey
+/gate/Si_300/vis/forceSolid true
+
+

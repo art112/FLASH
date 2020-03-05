@@ -1,0 +1,134 @@
+
+# Detecteur Silicium 50 micro
+#=============================================================================================================
+
+#DOSE ACTOR
+/gate/actor/addActor DoseActor Energy_proton_Si_50
+/gate/actor/Energy_proton_Si_50/save output/DoseActor_Energy_proton_Si_50.root
+/gate/actor/Energy_proton_Si_50/attachTo Si_50
+
+/gate/actor/Energy_proton_Si_50/setResolution 1 1 1
+
+/gate/actor/Energy_proton_Si_50/saveEveryNSeconds 60
+/gate/actor/Energy_proton_Si_50/stepHitType random
+
+/gate/actor/Energy_proton_Si_50/enableEdep true
+/gate/actor/Energy_proton_Si_50/enableUncertaintyEdep true
+/gate/actor/Energy_proton_Si_50/enableDose false
+/gate/actor/Energy_proton_Si_50/enableUncertaintyDose false
+/gate/actor/Energy_proton_Si_50/enableDoseToWater false
+/gate/actor/Energy_proton_Si_50/enableUncertaintyDoseToWater false
+#/gate/actor/Energy_proton_Si_50/normaliseDoseToWater     false
+#/gate/actor/Energy_proton_Si_50/normaliseDoseToMax     false
+/gate/actor/Energy_proton_Si_50/normaliseDoseToIntegral   false
+/gate/actor/Energy_proton_Si_50/enableNumberOfHits true
+
+
+/gate/actor/addActor PhaseSpaceActor               PhaseSpace_Energy_proton_Si_50
+/gate/actor/PhaseSpace_Energy_proton_Si_50/save                     output/PhaseSpace_Energy_proton_Si_50.root
+/gate/actor/PhaseSpace_Energy_proton_Si_50/attachTo                 Si_50
+/gate/actor/PhaseSpace_Energy_proton_Si_50/enableProductionProcess  false
+
+/gate/actor/PhaseSpace_Energy_proton_Si_50/enableEkine              true
+/gate/actor/PhaseSpace_Energy_proton_Si_50/enableXPosition          true
+/gate/actor/PhaseSpace_Energy_proton_Si_50/enableYPosition          true
+/gate/actor/PhaseSpace_Energy_proton_Si_50/enableZPosition          true
+/gate/actor/PhaseSpace_Energy_proton_Si_50/enableXDirection         false
+/gate/actor/PhaseSpace_Energy_proton_Si_50/enableYDirection         false
+/gate/actor/PhaseSpace_Energy_proton_Si_50/enableZDirection         false
+/gate/actor/PhaseSpace_Energy_proton_Si_50/enableProductionVolume   true
+/gate/actor/PhaseSpace_Energy_proton_Si_50/enableProductionProcess  true
+/gate/actor/PhaseSpace_Energy_proton_Si_50/enableParticleName       true
+/gate/actor/PhaseSpace_Energy_proton_Si_50/enableWeight             false
+/gate/actor/PhaseSpace_Energy_proton_Si_50/addFilter                       particleFilter
+/gate/actor/PhaseSpace_Energy_proton_Si_50/particleFilter/addParticle      proton
+
+
+# Detecteur Silicium 80 micro
+#=============================================================================================================
+
+#DOSE ACTOR
+/gate/actor/addActor DoseActor Energy_proton_Si_80
+/gate/actor/Energy_proton_Si_80/save output/DoseActor_Energy_proton_Si_80.root
+/gate/actor/Energy_proton_Si_80/attachTo Si_80
+
+/gate/actor/Energy_proton_Si_80/setResolution 1 1 1
+
+/gate/actor/Energy_proton_Si_80/saveEveryNSeconds 60
+/gate/actor/Energy_proton_Si_80/stepHitType random
+
+/gate/actor/Energy_proton_Si_80/enableEdep true
+/gate/actor/Energy_proton_Si_80/enableUncertaintyEdep true
+/gate/actor/Energy_proton_Si_80/enableDose false
+/gate/actor/Energy_proton_Si_80/enableUncertaintyDose false
+/gate/actor/Energy_proton_Si_80/enableDoseToWater false
+/gate/actor/Energy_proton_Si_80/enableUncertaintyDoseToWater false
+#/gate/actor/Energy_proton_Si_80/normaliseDoseToWater     false
+#/gate/actor/Energy_proton_Si_80/normaliseDoseToMax     false
+/gate/actor/Energy_proton_Si_80/normaliseDoseToIntegral   false
+/gate/actor/Energy_proton_Si_80/enableNumberOfHits true
+
+
+/gate/actor/addActor PhaseSpaceActor               PhaseSpace_Energy_proton_Si_80
+/gate/actor/PhaseSpace_Energy_proton_Si_80/save                     output/PhaseSpace_Energy_proton_Si_80.root
+/gate/actor/PhaseSpace_Energy_proton_Si_80/attachTo                 Si_80
+/gate/actor/PhaseSpace_Energy_proton_Si_80/enableProductionProcess  false
+
+/gate/actor/PhaseSpace_Energy_proton_Si_80/enableEkine              true
+/gate/actor/PhaseSpace_Energy_proton_Si_80/enableXPosition          true
+/gate/actor/PhaseSpace_Energy_proton_Si_80/enableYPosition          true
+/gate/actor/PhaseSpace_Energy_proton_Si_80/enableZPosition          true
+/gate/actor/PhaseSpace_Energy_proton_Si_80/enableXDirection         false
+/gate/actor/PhaseSpace_Energy_proton_Si_80/enableYDirection         false
+/gate/actor/PhaseSpace_Energy_proton_Si_80/enableZDirection         false
+/gate/actor/PhaseSpace_Energy_proton_Si_80/enableProductionVolume   true
+/gate/actor/PhaseSpace_Energy_proton_Si_80/enableProductionProcess  true
+/gate/actor/PhaseSpace_Energy_proton_Si_80/enableParticleName       true
+/gate/actor/PhaseSpace_Energy_proton_Si_80/enableWeight             false
+/gate/actor/PhaseSpace_Energy_proton_Si_80/addFilter                       particleFilter
+/gate/actor/PhaseSpace_Energy_proton_Si_80/particleFilter/addParticle      proton
+
+
+# Detecteur Silicium 300 micro
+#=============================================================================================================
+
+#DOSE ACTOR
+/gate/actor/addActor DoseActor Energy_proton_Si_300
+/gate/actor/Energy_proton_Si_300/save output/DoseActor_Energy_proton_Si_300.root
+/gate/actor/Energy_proton_Si_300/attachTo Si_300
+
+/gate/actor/Energy_proton_Si_300/setResolution 1 1 1
+
+/gate/actor/Energy_proton_Si_300/saveEveryNSeconds 60
+/gate/actor/Energy_proton_Si_300/stepHitType random
+
+/gate/actor/Energy_proton_Si_300/enableEdep true
+/gate/actor/Energy_proton_Si_300/enableUncertaintyEdep true
+/gate/actor/Energy_proton_Si_300/enableDose false
+/gate/actor/Energy_proton_Si_300/enableUncertaintyDose false
+/gate/actor/Energy_proton_Si_300/enableDoseToWater false
+/gate/actor/Energy_proton_Si_300/enableUncertaintyDoseToWater false
+#/gate/actor/Energy_proton_Si_300/normaliseDoseToWater     false
+#/gate/actor/Energy_proton_Si_300/normaliseDoseToMax     false
+/gate/actor/Energy_proton_Si_300/normaliseDoseToIntegral   false
+/gate/actor/Energy_proton_Si_300/enableNumberOfHits true
+
+
+/gate/actor/addActor PhaseSpaceActor               PhaseSpace_Energy_proton_Si_300
+/gate/actor/PhaseSpace_Energy_proton_Si_300/save                     output/PhaseSpace_Energy_proton_Si_300.root
+/gate/actor/PhaseSpace_Energy_proton_Si_300/attachTo                 Si_300
+/gate/actor/PhaseSpace_Energy_proton_Si_300/enableProductionProcess  false
+
+/gate/actor/PhaseSpace_Energy_proton_Si_300/enableEkine              true
+/gate/actor/PhaseSpace_Energy_proton_Si_300/enableXPosition          true
+/gate/actor/PhaseSpace_Energy_proton_Si_300/enableYPosition          true
+/gate/actor/PhaseSpace_Energy_proton_Si_300/enableZPosition          true
+/gate/actor/PhaseSpace_Energy_proton_Si_300/enableXDirection         false
+/gate/actor/PhaseSpace_Energy_proton_Si_300/enableYDirection         false
+/gate/actor/PhaseSpace_Energy_proton_Si_300/enableZDirection         false
+/gate/actor/PhaseSpace_Energy_proton_Si_300/enableProductionVolume   true
+/gate/actor/PhaseSpace_Energy_proton_Si_300/enableProductionProcess  true
+/gate/actor/PhaseSpace_Energy_proton_Si_300/enableParticleName       true
+/gate/actor/PhaseSpace_Energy_proton_Si_300/enableWeight             false
+/gate/actor/PhaseSpace_Energy_proton_Si_300/addFilter                       particleFilter
+/gate/actor/PhaseSpace_Energy_proton_Si_300/particleFilter/addParticle      proton

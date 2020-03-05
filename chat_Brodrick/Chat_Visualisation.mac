@@ -1,0 +1,221 @@
+# Arthur -> 16/12/19 | Origine -> Sophie
+
+#=====================================================
+# VERBOSITY
+#=====================================================
+/control/execute mac/verbose.mac
+
+#=====================================================
+# VISUALISATION
+#=====================================================
+/control/execute mac/visu_CT.mac
+
+#=====================================================
+#Geometry Material
+#=====================================================
+
+# warning custom GateMaterials !
+/gate/geometry/setMaterialDatabase data/GateMaterials.db
+#/gate/geometry/setIonisationPotential Water 75 eV
+#/gate/geometry/setIonisationPotential G4_WATER 75 eV
+#/gate/geometry/setIonisationPotential ICRU_CompactBone 91.9 eV
+#/gate/geometry/setIonisationPotential Air_NIST 85.7 eV
+
+#=====================================================
+#World
+#=====================================================
+/gate/world/geometry/setXLength 1.0 m
+/gate/world/geometry/setYLength 1.0 m
+/gate/world/geometry/setZLength 4.0 m
+/gate/world/setMaterial G4_AIR
+
+
+#=====================================================
+#System
+#=====================================================
+
+/control/execute geometry/Kapton_Collimateur_Tungsten_CorrectionCharbel.mac
+#/control/execute geometry/Kapton_Collimateur_Tungsten_CorrectionCharbel_Frite_PhaseSpaceActor.mac
+
+#/control/execute geometry/SystemeDetectionApresSouris.mac
+
+
+#===========================================
+# CIBLE 
+#===========================================
+
+/gate/world/daughters/name         InputImageOfProtocol 
+/gate/world/daughters/insert       ImageNestedParametrisedVolume
+/gate/InputImageOfProtocol/geometry/SetImage /media/sf_PartageVbox8/GATE/CT_Chat/Broderick_CT/Broderic/Broderick_0.dcm
+/gate/geometry/setMaterialDatabase         data/seuillage.db 
+/gate/InputImageOfProtocol/geometry/SetHUToMaterialFile  data/seuillage_Chat.txt
+/gate/InputImageOfProtocol/vis/setColor cyan
+/gate/InputImageOfProtocol/vis/forceSolid
+
+### Oeil Droit
+#/gate/InputImageOfProtocol/placement/setTranslation -2.338 -1.428 175. cm
+### Museau
+/gate/InputImageOfProtocol/placement/setTranslation 0. 0. 175. cm
+
+/gate/InputImageOfProtocol/placement/setRotationAxis 0 1 0
+/gate/InputImageOfProtocol/placement/setRotationAngle 180. deg
+#/gate/InputImageOfProtocol/placement/setRotationAxis 0 0 1
+#/gate/InputImageOfProtocol/placement/setRotationAngle 180. deg
+/gate/InputImageOfProtocol/geometry/buildAndDumpLabeledImage output/InputImageOfProtocolTEST_MATERIAU.hdr
+/gate/InputImageOfProtocol/vis/forceWireframe
+/gate/geometry/rebuild
+
+/gate/world/daughters/name cuve
+/gate/world/daughters/insert box
+/gate/cuve/setMaterial PMMA
+/gate/cuve/geometry/setXLength 5. cm
+/gate/cuve/geometry/setYLength 5. cm
+/gate/cuve/geometry/setZLength 5. cm
+/gate/cuve/vis/setColor cyan
+#/gate/cuve/vis/forceWireframe
+/gate/cuve/vis/forceSolid
+/gate/cuve/placement/setTranslation 0. 0. 185. cm
+
+
+#====================================
+#Physics GATE
+#====================================
+
+#/control/execute physics_list/GateV8_BIC.mac
+/control/execute physics_list/GateV8_BIC_HP.mac
+#/control/execute physics_list/GateV7.mac
+
+#====================================
+
+
+#cut world
+/gate/physics/Gamma/SetCutInRegion world 10 mm
+/gate/physics/Electron/SetCutInRegion world 10 mm
+/gate/physics/Proton/SetCutInRegion world 10 mm
+/gate/physics/Positron/SetCutInRegion world 10 mm
+
+#/gate/physics/Gamma/SetCutInRegion colli1 10 mm
+#/gate/physics/Electron/SetCutInRegion colli1 10 mm
+#/gate/physics/Proton/SetCutInRegion colli1 10 mm
+#/gate/physics/Positron/SetCutInRegion colli1 10 mm
+
+
+#/gate/physics/Gamma/SetCutInRegion InputImageOfProtocol 0.1 mm
+#/gate/physics/Electron/SetCutInRegion InputImageOfProtocol 0.1 mm
+#/gate/physics/Proton/SetCutInRegion InputImageOfProtocol 0.1 mm
+#/gate/physics/Positron/SetCutInRegion InputImageOfProtocol 0.1 mm
+
+/gate/physics/Gamma/SetCutInRegion cuve 0.1 mm
+/gate/physics/Electron/SetCutInRegion cuve 0.1 mm
+/gate/physics/Proton/SetCutInRegion cuve 0.1 mm
+/gate/physics/Positron/SetCutInRegion cuve 0.1 mm
+
+/gate/physics/displayCuts
+
+#steplimiter
+#/gate/physics/SetMaxStepSizeInRegion InputImageOfProtocol 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion cuve 0.1 mm
+
+
+/gate/physics/setEMin 0.1 keV
+/gate/physics/setEMax 10 GeV
+
+/gate/physics/setDEDXBinning 500
+/gate/physics/setLambdaBinning 500
+
+
+#====================================
+#Actor
+#====================================
+
+#/gate/output/allowNoOutput
+
+#DOSE ACTOR
+/gate/actor/addActor DoseActor dose
+/gate/actor/dose/save output/souris.hdr
+/gate/actor/dose/attachTo InputImageOfProtocol
+/gate/actor/dose/setResolution 254 195 523
+/gate/actor/dose/saveEveryNSeconds 60
+/gate/actor/dose/stepHitType random
+/gate/actor/dose/enableEdep true
+/gate/actor/dose/enableUncertaintyEdep true
+/gate/actor/dose/enableDose true
+/gate/actor/dose/enableUncertaintyDose true
+/gate/actor/dose/enableDoseToWater true
+/gate/actor/dose/enableUncertaintyDoseToWater true
+#/gate/actor/dose/enableNumberOfHits true
+#/gate/actor/dose/normaliseDoseToWater     true
+#/gate/actor/dose/normaliseDoseToMax     true
+#/gate/actor/dose/normaliseDoseToIntegral   true
+
+
+#DOSE ACTOR
+/gate/actor/addActor DoseActor dose-cuve
+/gate/actor/dose-cuve/save output/cuve.hdr
+/gate/actor/dose-cuve/attachTo cuve
+/gate/actor/dose-cuve/setResolution 250 250 250
+/gate/actor/dose-cuve/saveEveryNSeconds 60
+/gate/actor/dose-cuve/stepHitType random
+/gate/actor/dose-cuve/enableDose true
+/gate/actor/dose-cuve/enableUncertaintyDose true
+
+
+# Pemet de retrouver les émméteurs beta+
+/control/execute geometry/BetaPlus_Actor.mac
+
+# Stopping Power
+/control/execute geometry/Stopping_Power.mac
+
+# Pemet de caracteriser la ligne
+#/control/execute geometry/SystemeDetectionApresLigne_Actor.mac
+
+
+#====================================
+#Initialization
+#====================================
+
+/gate/run/initialize
+
+
+#====================================
+#Source
+#====================================
+
+#type
+/gate/source/addSource pbeam gps
+/gate/source/pbeam/gps/particle proton
+
+
+#forme
+/gate/source/pbeam/gps/type Beam
+/gate/source/pbeam/gps/shape Circle
+
+/gate/source/pbeam/gps/pos/sigma_x 2 mm
+/gate/source/pbeam/gps/pos/sigma_y 3 mm
+
+#localisation
+/gate/source/pbeam/gps/centre 0 0 -0.01 mm
+/gate/source/pbeam/gps/direction 0 0 1
+
+#energie
+/gate/source/pbeam/gps/ene/mono 68 MeV
+#/gate/source/pbeam/gps/ene/type Gauss
+#/gate/source/pbeam/gps/ene/sigma 0.68 MeV
+
+#/gate/source/pbeam/gps/setTestFlag true
+
+#====================================
+#Initialization
+#====================================
+
+#/gate/run/initialize
+
+#graine 
+/gate/random/setEngineName MersenneTwister
+/gate/random/setEngineSeed auto
+
+#nb particule
+/gate/application/setTotalNumberOfPrimaries 1
+#/gate/application/setTotalNumberOfPrimaries 10000000
+/gate/application/start
+

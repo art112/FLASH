@@ -1,0 +1,148 @@
+##########################################################################################################################
+# Frite -> Volume fictif pour recupérer des informations sur le passage des particules 
+# Volumes placés avant et après un élément interessant ex: système tungstène
+# WARNING : Frite Space associé à une géométrie !!!
+##########################################################################################################################
+
+
+# 26/02/2020 : lIGNE Arronax
+# Bride + Kapton 
+# Disposition Tungsten : 1 Feuille de tungsten enchassé dans du PVC
+# Détecteur Charbel
+# Cuivre Rayons X
+# Collimateur
+
+#====================================================================
+#====================================================================
+# -----------------------------------------------------
+# Bride + fenetre kapton
+#================================================
+
+# Kapton before -> attach to volume kapton
+
+/gate/world/daughters/name frite_Kapton_after
+/gate/world/daughters/insert cylinder
+/gate/frite_Kapton_after/setMaterial G4_AIR
+/gate/frite_Kapton_after/geometry/setRmin          0.0 cm
+/gate/frite_Kapton_after/geometry/setRmax          1.5 cm
+/gate/frite_Kapton_after/geometry/setHeight         0.01 cm
+/gate/frite_Kapton_after/geometry/setPhiStart        0 deg
+/gate/frite_Kapton_after/geometry/setDeltaPhi      360 deg
+/gate/frite_Kapton_after/placement/setTranslation 0. 0. 0.055 cm
+/gate/frite_Kapton_after/vis/setColor magenta
+/gate/frite_Kapton_after/vis/forceSolid
+
+#TUNGSTENE + Support - pour éclater - homogénéiser - le faisceau - a 1cm du Kapton
+#========================================================
+
+/gate/world/daughters/name frite_Tungsten_before
+/gate/world/daughters/insert box
+/gate/frite_Tungsten_before/setMaterial G4_AIR
+/gate/frite_Tungsten_before/geometry/setXLength 40 cm
+/gate/frite_Tungsten_before/geometry/setYLength 40 cm
+/gate/frite_Tungsten_before/geometry/setZLength 0.1 mm
+/gate/frite_Tungsten_before/placement/setTranslation 0. 0. 9.96 mm
+/gate/frite_Tungsten_before/vis/setColor magenta
+/gate/frite_Tungsten_before/vis/forceSolid
+
+/gate/world/daughters/name frite_Tungsten_after
+/gate/world/daughters/insert box
+/gate/frite_Tungsten_after/setMaterial G4_AIR
+/gate/frite_Tungsten_after/geometry/setXLength 40 cm
+/gate/frite_Tungsten_after/geometry/setYLength 40 cm
+/gate/frite_Tungsten_after/geometry/setZLength 0.1 mm
+/gate/frite_Tungsten_after/placement/setTranslation 0. 0. 14.06 mm
+/gate/frite_Tungsten_after/vis/setColor magenta
+/gate/frite_Tungsten_after/vis/forceSolid
+
+
+#Detecteur Dose Charbel - contient deux ouvertures en alu
+#=============================================================================================================
+
+/gate/world/daughters/name frite_DetecteurCharbel_before
+/gate/world/daughters/insert box
+/gate/frite_DetecteurCharbel_before/setMaterial G4_AIR
+/gate/frite_DetecteurCharbel_before/geometry/setXLength 40 cm
+/gate/frite_DetecteurCharbel_before/geometry/setYLength 40 cm
+/gate/frite_DetecteurCharbel_before/geometry/setZLength 0.01 cm
+/gate/frite_DetecteurCharbel_before/placement/setTranslation 0. 0. 20.0767 mm
+/gate/frite_DetecteurCharbel_before/vis/setColor magenta
+/gate/frite_DetecteurCharbel_before/vis/forceSolid
+
+/gate/world/daughters/name frite_DetecteurCharbel_after
+/gate/world/daughters/insert box
+/gate/frite_DetecteurCharbel_after/setMaterial G4_AIR
+/gate/frite_DetecteurCharbel_after/geometry/setXLength 40 cm
+/gate/frite_DetecteurCharbel_after/geometry/setYLength 40 cm
+/gate/frite_DetecteurCharbel_after/geometry/setZLength 0.01 cm
+/gate/frite_DetecteurCharbel_after/placement/setTranslation 0. 0. 70.2167 mm
+/gate/frite_DetecteurCharbel_after/vis/setColor magenta
+/gate/frite_DetecteurCharbel_after/vis/forceSolid
+
+
+
+#2 micron de cuivre avant le colli pour monitorer les RX - 1cm avant le colli 
+#=============================================================================
+
+/gate/world/daughters/name frite_cuivre_before
+/gate/world/daughters/insert box
+/gate/frite_cuivre_before/setMaterial G4_AIR
+/gate/frite_cuivre_before/geometry/setXLength 40 cm
+/gate/frite_cuivre_before/geometry/setYLength 40 cm
+/gate/frite_cuivre_before/geometry/setZLength 0.1 mm
+/gate/frite_cuivre_before/placement/setTranslation 0. 0. 1609.949 mm
+/gate/frite_cuivre_before/vis/setColor magenta
+/gate/frite_cuivre_before/vis/forceSolid
+
+/gate/world/daughters/name frite_cuivre_after
+/gate/world/daughters/insert box
+/gate/frite_cuivre_after/setMaterial G4_AIR
+/gate/frite_cuivre_after/geometry/setXLength 40 cm
+/gate/frite_cuivre_after/geometry/setYLength 40 cm
+/gate/frite_cuivre_after/geometry/setZLength 0.1 mm
+/gate/frite_cuivre_after/placement/setTranslation 0. 0. 1610.051 mm
+/gate/frite_cuivre_after/vis/setColor magenta
+/gate/frite_cuivre_after/vis/forceSolid
+
+#COLLIMATEUR 1 collé à la cible
+#=============================================================================================================
+
+/gate/world/daughters/name frite_colli_before
+/gate/world/daughters/insert box
+/gate/frite_colli_before/setMaterial G4_AIR
+/gate/frite_colli_before/geometry/setXLength 40 cm
+/gate/frite_colli_before/geometry/setYLength 40 cm
+/gate/frite_colli_before/geometry/setZLength 0.01 cm
+/gate/frite_colli_before/placement/setTranslation 0. 0. 162.495 cm
+/gate/frite_colli_before/vis/setColor magenta
+/gate/frite_colli_before/vis/forceSolid
+
+/gate/world/daughters/name frite_colli_after
+/gate/world/daughters/insert box
+/gate/frite_colli_after/setMaterial G4_AIR
+/gate/frite_colli_after/geometry/setXLength 40 cm
+/gate/frite_colli_after/geometry/setYLength 40 cm
+/gate/frite_colli_after/geometry/setZLength 0.01 cm
+/gate/frite_colli_after/placement/setTranslation 0. 0. 165.005 cm
+/gate/frite_colli_after/vis/setColor magenta
+/gate/frite_colli_after/vis/forceSolid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

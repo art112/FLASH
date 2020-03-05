@@ -1,0 +1,1527 @@
+[Materials]
+
+Air2: d=1.29 mg/cm3 ; n=4 ; state=gas
+	+el: name=Argon; f=0.012827
+	+el: name=Carbon; f=0.000124
+	+el: name=Nitrogen; f=0.755268
+	+el: name=Oxygen; f=0.231781
+
+Tissu0: d=0.26 g/cm3 ; n=9
+	+el: name=Carbon; f=0.105
+	+el: name=Chlorine; f=0.003
+	+el: name=Hydrogen; f=0.103
+	+el: name=Nitrogen; f=0.031
+	+el: name=Oxygen; f=0.749
+	+el: name=Phosphor; f=0.002
+	+el: name=Potassium; f=0.002
+	+el: name=Sodium; f=0.002
+	+el: name=Sulfur; f=0.003
+
+Tissu1: d=0.2874 g/cm3 ; n=9
+	+el: name=Carbon; f=0.1279
+	+el: name=Chlorine; f=0.0029
+	+el: name=Hydrogen; f=0.1037
+	+el: name=Nitrogen; f=0.0298
+	+el: name=Oxygen; f=0.727
+	+el: name=Phosphor; f=0.0019
+	+el: name=Potassium; f=0.0019
+	+el: name=Sodium; f=0.0019
+	+el: name=Sulfur; f=0.0029
+
+Tissu10: d=0.5534 g/cm3 ; n=9
+	+el: name=Carbon; f=0.3349
+	+el: name=Chlorine; f=0.002
+	+el: name=Hydrogen; f=0.1085
+	+el: name=Nitrogen; f=0.0198
+	+el: name=Oxygen; f=0.5293
+	+el: name=Phosphor; f=0.001
+	+el: name=Potassium; f=0.001
+	+el: name=Sodium; f=0.0015
+	+el: name=Sulfur; f=0.002
+
+Tissu100: d=1.6608 g/cm3 ; n=9
+	+el: name=Calcium; f=0.1839
+	+el: name=Carbon; f=0.2026
+	+el: name=Hydrogen; f=0.0472
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0407
+	+el: name=Oxygen; f=0.435
+	+el: name=Phosphor; f=0.0846
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu101: d=1.6718 g/cm3 ; n=9
+	+el: name=Calcium; f=0.1856
+	+el: name=Carbon; f=0.2005
+	+el: name=Hydrogen; f=0.0467
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0408
+	+el: name=Oxygen; f=0.435
+	+el: name=Phosphor; f=0.0854
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu102: d=1.6827 g/cm3 ; n=9
+	+el: name=Calcium; f=0.1874
+	+el: name=Carbon; f=0.1974
+	+el: name=Hydrogen; f=0.0461
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0411
+	+el: name=Oxygen; f=0.4358
+	+el: name=Phosphor; f=0.0862
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu103: d=1.6934 g/cm3 ; n=10
+	+el: name=Calcium; f=0.189
+	+el: name=Carbon; f=0.1912
+	+el: name=Chlorine; f=0.0001
+	+el: name=Hydrogen; f=0.0457
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0415
+	+el: name=Oxygen; f=0.4391
+	+el: name=Phosphor; f=0.0873
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu104: d=1.704 g/cm3 ; n=10
+	+el: name=Calcium; f=0.1907
+	+el: name=Carbon; f=0.185
+	+el: name=Chlorine; f=0.0003
+	+el: name=Hydrogen; f=0.0453
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.042
+	+el: name=Oxygen; f=0.4424
+	+el: name=Phosphor; f=0.0883
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu105: d=1.7146 g/cm3 ; n=10
+	+el: name=Calcium; f=0.1924
+	+el: name=Carbon; f=0.1788
+	+el: name=Chlorine; f=0.0004
+	+el: name=Hydrogen; f=0.0447
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0424
+	+el: name=Oxygen; f=0.4458
+	+el: name=Phosphor; f=0.0894
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu106: d=1.7252 g/cm3 ; n=10
+	+el: name=Calcium; f=0.194
+	+el: name=Carbon; f=0.1726
+	+el: name=Chlorine; f=0.0006
+	+el: name=Hydrogen; f=0.0444
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0429
+	+el: name=Oxygen; f=0.4491
+	+el: name=Phosphor; f=0.0904
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu107: d=1.7357 g/cm3 ; n=10
+	+el: name=Calcium; f=0.1957
+	+el: name=Carbon; f=0.1664
+	+el: name=Chlorine; f=0.0007
+	+el: name=Hydrogen; f=0.044
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0433
+	+el: name=Oxygen; f=0.4524
+	+el: name=Phosphor; f=0.0915
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu108: d=1.7461 g/cm3 ; n=10
+	+el: name=Calcium; f=0.1973
+	+el: name=Carbon; f=0.1602
+	+el: name=Chlorine; f=0.0009
+	+el: name=Hydrogen; f=0.0435
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0438
+	+el: name=Oxygen; f=0.4557
+	+el: name=Phosphor; f=0.0926
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu109: d=1.7571 g/cm3 ; n=10
+	+el: name=Calcium; f=0.199
+	+el: name=Carbon; f=0.1578
+	+el: name=Chlorine; f=0.0009
+	+el: name=Hydrogen; f=0.0429
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0439
+	+el: name=Oxygen; f=0.4561
+	+el: name=Phosphor; f=0.0934
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu11: d=0.5852 g/cm3 ; n=9
+	+el: name=Carbon; f=0.3579
+	+el: name=Chlorine; f=0.0019
+	+el: name=Hydrogen; f=0.1092
+	+el: name=Nitrogen; f=0.0186
+	+el: name=Oxygen; f=0.5073
+	+el: name=Phosphor; f=0.0009
+	+el: name=Potassium; f=0.0009
+	+el: name=Sodium; f=0.0014
+	+el: name=Sulfur; f=0.0019
+
+Tissu110: d=1.7683 g/cm3 ; n=10
+	+el: name=Calcium; f=0.2008
+	+el: name=Carbon; f=0.1576
+	+el: name=Chlorine; f=0.0008
+	+el: name=Hydrogen; f=0.0425
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0437
+	+el: name=Oxygen; f=0.4546
+	+el: name=Phosphor; f=0.094
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu111: d=1.7794 g/cm3 ; n=10
+	+el: name=Calcium; f=0.2025
+	+el: name=Carbon; f=0.1574
+	+el: name=Chlorine; f=0.0008
+	+el: name=Hydrogen; f=0.0418
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0436
+	+el: name=Oxygen; f=0.4532
+	+el: name=Phosphor; f=0.0946
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu112: d=1.7905 g/cm3 ; n=10
+	+el: name=Calcium; f=0.2042
+	+el: name=Carbon; f=0.1573
+	+el: name=Chlorine; f=0.0007
+	+el: name=Hydrogen; f=0.0412
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0435
+	+el: name=Oxygen; f=0.4518
+	+el: name=Phosphor; f=0.0953
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu113: d=1.8016 g/cm3 ; n=10
+	+el: name=Calcium; f=0.206
+	+el: name=Carbon; f=0.1571
+	+el: name=Chlorine; f=0.0007
+	+el: name=Hydrogen; f=0.0405
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0434
+	+el: name=Oxygen; f=0.4504
+	+el: name=Phosphor; f=0.0959
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu114: d=1.8126 g/cm3 ; n=10
+	+el: name=Calcium; f=0.2077
+	+el: name=Carbon; f=0.1569
+	+el: name=Chlorine; f=0.0006
+	+el: name=Hydrogen; f=0.04
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0432
+	+el: name=Oxygen; f=0.449
+	+el: name=Phosphor; f=0.0966
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu115: d=1.8236 g/cm3 ; n=10
+	+el: name=Calcium; f=0.2094
+	+el: name=Carbon; f=0.1567
+	+el: name=Chlorine; f=0.0005
+	+el: name=Hydrogen; f=0.0395
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0431
+	+el: name=Oxygen; f=0.4476
+	+el: name=Phosphor; f=0.0972
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu116: d=1.8345 g/cm3 ; n=10
+	+el: name=Calcium; f=0.2112
+	+el: name=Carbon; f=0.1565
+	+el: name=Chlorine; f=0.0005
+	+el: name=Hydrogen; f=0.0387
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.043
+	+el: name=Oxygen; f=0.4462
+	+el: name=Phosphor; f=0.0978
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu117: d=1.8454 g/cm3 ; n=10
+	+el: name=Calcium; f=0.2129
+	+el: name=Carbon; f=0.1563
+	+el: name=Chlorine; f=0.0004
+	+el: name=Hydrogen; f=0.0382
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0428
+	+el: name=Oxygen; f=0.4448
+	+el: name=Phosphor; f=0.0985
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu118: d=1.8563 g/cm3 ; n=10
+	+el: name=Calcium; f=0.2146
+	+el: name=Carbon; f=0.1561
+	+el: name=Chlorine; f=0.0003
+	+el: name=Hydrogen; f=0.0379
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0427
+	+el: name=Oxygen; f=0.4433
+	+el: name=Phosphor; f=0.0991
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu119: d=1.8671 g/cm3 ; n=10
+	+el: name=Calcium; f=0.2164
+	+el: name=Carbon; f=0.1559
+	+el: name=Chlorine; f=0.0003
+	+el: name=Hydrogen; f=0.0371
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0426
+	+el: name=Oxygen; f=0.4419
+	+el: name=Phosphor; f=0.0998
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu12: d=0.6176 g/cm3 ; n=9
+	+el: name=Carbon; f=0.3809
+	+el: name=Chlorine; f=0.0018
+	+el: name=Hydrogen; f=0.1096
+	+el: name=Nitrogen; f=0.0175
+	+el: name=Oxygen; f=0.4853
+	+el: name=Phosphor; f=0.0008
+	+el: name=Potassium; f=0.0008
+	+el: name=Sodium; f=0.0014
+	+el: name=Sulfur; f=0.0018
+
+Tissu120: d=1.8778 g/cm3 ; n=10
+	+el: name=Calcium; f=0.2181
+	+el: name=Carbon; f=0.1557
+	+el: name=Chlorine; f=0.0002
+	+el: name=Hydrogen; f=0.0366
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0425
+	+el: name=Oxygen; f=0.4405
+	+el: name=Phosphor; f=0.1004
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu121: d=1.8886 g/cm3 ; n=10
+	+el: name=Calcium; f=0.2198
+	+el: name=Carbon; f=0.1555
+	+el: name=Chlorine; f=0.0001
+	+el: name=Hydrogen; f=0.0361
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0423
+	+el: name=Oxygen; f=0.4391
+	+el: name=Phosphor; f=0.1011
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu122: d=1.8992 g/cm3 ; n=10
+	+el: name=Calcium; f=0.2216
+	+el: name=Carbon; f=0.1553
+	+el: name=Chlorine; f=0.0001
+	+el: name=Hydrogen; f=0.0353
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0422
+	+el: name=Oxygen; f=0.4377
+	+el: name=Phosphor; f=0.1017
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu123: d=1.9099 g/cm3 ; n=9
+	+el: name=Calcium; f=0.2233
+	+el: name=Carbon; f=0.1551
+	+el: name=Hydrogen; f=0.0349
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0421
+	+el: name=Oxygen; f=0.4363
+	+el: name=Phosphor; f=0.1023
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu13: d=0.6504 g/cm3 ; n=9
+	+el: name=Carbon; f=0.4039
+	+el: name=Chlorine; f=0.0017
+	+el: name=Hydrogen; f=0.1102
+	+el: name=Nitrogen; f=0.0164
+	+el: name=Oxygen; f=0.4634
+	+el: name=Phosphor; f=0.0007
+	+el: name=Potassium; f=0.0007
+	+el: name=Sodium; f=0.0013
+	+el: name=Sulfur; f=0.0017
+
+Tissu14: d=0.6838 g/cm3 ; n=9
+	+el: name=Carbon; f=0.4269
+	+el: name=Chlorine; f=0.0016
+	+el: name=Hydrogen; f=0.1107
+	+el: name=Nitrogen; f=0.0153
+	+el: name=Oxygen; f=0.4414
+	+el: name=Phosphor; f=0.0006
+	+el: name=Potassium; f=0.0006
+	+el: name=Sodium; f=0.0013
+	+el: name=Sulfur; f=0.0016
+
+Tissu15: d=0.7177 g/cm3 ; n=9
+	+el: name=Carbon; f=0.4499
+	+el: name=Chlorine; f=0.0016
+	+el: name=Hydrogen; f=0.1108
+	+el: name=Nitrogen; f=0.0142
+	+el: name=Oxygen; f=0.4194
+	+el: name=Phosphor; f=0.0006
+	+el: name=Potassium; f=0.0006
+	+el: name=Sodium; f=0.0013
+	+el: name=Sulfur; f=0.0016
+
+Tissu16: d=0.7522 g/cm3 ; n=9
+	+el: name=Carbon; f=0.4728
+	+el: name=Chlorine; f=0.0015
+	+el: name=Hydrogen; f=0.1114
+	+el: name=Nitrogen; f=0.013
+	+el: name=Oxygen; f=0.3975
+	+el: name=Phosphor; f=0.0005
+	+el: name=Potassium; f=0.0005
+	+el: name=Sodium; f=0.0012
+	+el: name=Sulfur; f=0.0015
+
+Tissu17: d=0.7872 g/cm3 ; n=9
+	+el: name=Carbon; f=0.4958
+	+el: name=Chlorine; f=0.0014
+	+el: name=Hydrogen; f=0.1119
+	+el: name=Nitrogen; f=0.0119
+	+el: name=Oxygen; f=0.3755
+	+el: name=Phosphor; f=0.0004
+	+el: name=Potassium; f=0.0004
+	+el: name=Sodium; f=0.0012
+	+el: name=Sulfur; f=0.0014
+
+Tissu18: d=0.8228 g/cm3 ; n=9
+	+el: name=Carbon; f=0.5188
+	+el: name=Chlorine; f=0.0013
+	+el: name=Hydrogen; f=0.1126
+	+el: name=Nitrogen; f=0.0108
+	+el: name=Oxygen; f=0.3535
+	+el: name=Phosphor; f=0.0003
+	+el: name=Potassium; f=0.0003
+	+el: name=Sodium; f=0.0011
+	+el: name=Sulfur; f=0.0013
+
+Tissu19: d=0.859 g/cm3 ; n=9
+	+el: name=Carbon; f=0.5418
+	+el: name=Chlorine; f=0.0012
+	+el: name=Hydrogen; f=0.1129
+	+el: name=Nitrogen; f=0.0097
+	+el: name=Oxygen; f=0.3316
+	+el: name=Phosphor; f=0.0002
+	+el: name=Potassium; f=0.0002
+	+el: name=Sodium; f=0.0011
+	+el: name=Sulfur; f=0.0012
+
+Tissu2: d=0.3152 g/cm3 ; n=9
+	+el: name=Carbon; f=0.1509
+	+el: name=Chlorine; f=0.0028
+	+el: name=Hydrogen; f=0.1042
+	+el: name=Nitrogen; f=0.0287
+	+el: name=Oxygen; f=0.705
+	+el: name=Phosphor; f=0.0018
+	+el: name=Potassium; f=0.0018
+	+el: name=Sodium; f=0.0019
+	+el: name=Sulfur; f=0.0028
+
+Tissu20: d=0.8958 g/cm3 ; n=9
+	+el: name=Carbon; f=0.5648
+	+el: name=Chlorine; f=0.0011
+	+el: name=Hydrogen; f=0.1135
+	+el: name=Nitrogen; f=0.0086
+	+el: name=Oxygen; f=0.3096
+	+el: name=Phosphor; f=0.0001
+	+el: name=Potassium; f=0.0001
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.0011
+
+Tissu21: d=0.9333 g/cm3 ; n=7
+	+el: name=Carbon; f=0.5878
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.1142
+	+el: name=Nitrogen; f=0.0074
+	+el: name=Oxygen; f=0.2876
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.001
+
+Tissu22: d=0.9809 g/cm3 ; n=7
+	+el: name=Carbon; f=0.6375
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.115
+	+el: name=Nitrogen; f=0.0074
+	+el: name=Oxygen; f=0.2371
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.001
+
+Tissu23: d=0.9896 g/cm3 ; n=8
+	+el: name=Carbon; f=0.5744
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.1131
+	+el: name=Nitrogen; f=0.0121
+	+el: name=Oxygen; f=0.297
+	+el: name=Phosphor; f=0.0002
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.0012
+
+Tissu24: d=0.998 g/cm3 ; n=8
+	+el: name=Carbon; f=0.5112
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.1113
+	+el: name=Nitrogen; f=0.0167
+	+el: name=Oxygen; f=0.3569
+	+el: name=Phosphor; f=0.0004
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.0014
+
+Tissu25: d=1.006 g/cm3 ; n=8
+	+el: name=Carbon; f=0.4481
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.1096
+	+el: name=Nitrogen; f=0.0214
+	+el: name=Oxygen; f=0.4167
+	+el: name=Phosphor; f=0.0006
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.0016
+
+Tissu26: d=1.0137 g/cm3 ; n=8
+	+el: name=Carbon; f=0.385
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.1077
+	+el: name=Nitrogen; f=0.026
+	+el: name=Oxygen; f=0.4766
+	+el: name=Phosphor; f=0.0008
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.0018
+
+Tissu27: d=1.02 g/cm3 ; n=9
+	+el: name=Carbon; f=0.3288
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.1064
+	+el: name=Nitrogen; f=0.0288
+	+el: name=Oxygen; f=0.5306
+	+el: name=Phosphor; f=0.0011
+	+el: name=Potassium; f=0.0003
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.002
+
+Tissu28: d=1.0284 g/cm3 ; n=10
+	+el: name=Carbon; f=0.3982
+	+el: name=Chlorine; f=0.0018
+	+el: name=Hydrogen; f=0.1055
+	+el: name=Iron; f=0.0008
+	+el: name=Nitrogen; f=0.0324
+	+el: name=Oxygen; f=0.4561
+	+el: name=Phosphor; f=0.0011
+	+el: name=Potassium; f=0.002
+	+el: name=Sodium; f=0.0001
+	+el: name=Sulfur; f=0.002
+
+Tissu29: d=1.03 g/cm3 ; n=10
+	+el: name=Carbon; f=0.2135
+	+el: name=Chlorine; f=0.002
+	+el: name=Hydrogen; f=0.106
+	+el: name=Iron; f=0.0003
+	+el: name=Nitrogen; f=0.0259
+	+el: name=Oxygen; f=0.6481
+	+el: name=Phosphor; f=0.001
+	+el: name=Potassium; f=0.0013
+	+el: name=Sodium; f=0.0006
+	+el: name=Sulfur; f=0.0013
+
+Tissu3: d=0.3435 g/cm3 ; n=9
+	+el: name=Carbon; f=0.1739
+	+el: name=Chlorine; f=0.0027
+	+el: name=Hydrogen; f=0.1049
+	+el: name=Nitrogen; f=0.0276
+	+el: name=Oxygen; f=0.683
+	+el: name=Phosphor; f=0.0017
+	+el: name=Potassium; f=0.0017
+	+el: name=Sodium; f=0.0018
+	+el: name=Sulfur; f=0.0027
+
+Tissu30: d=1.0602 g/cm3 ; n=9
+	+el: name=Carbon; f=0.1866
+	+el: name=Chlorine; f=0.0013
+	+el: name=Hydrogen; f=0.0995
+	+el: name=Nitrogen; f=0.0457
+	+el: name=Oxygen; f=0.6614
+	+el: name=Phosphor; f=0.0013
+	+el: name=Potassium; f=0.0006
+	+el: name=Sodium; f=0.0013
+	+el: name=Sulfur; f=0.0023
+
+Tissu31: d=1.05 g/cm3 ; n=9
+	+el: name=Carbon; f=0.1338
+	+el: name=Chlorine; f=0.0014
+	+el: name=Hydrogen; f=0.1026
+	+el: name=Nitrogen; f=0.0332
+	+el: name=Oxygen; f=0.7193
+	+el: name=Phosphor; f=0.002
+	+el: name=Potassium; f=0.0035
+	+el: name=Sodium; f=0.0012
+	+el: name=Sulfur; f=0.003
+
+Tissu32: d=1.0601 g/cm3 ; n=10
+	+el: name=Carbon; f=0.1099
+	+el: name=Chlorine; f=0.003
+	+el: name=Hydrogen; f=0.1025
+	+el: name=Iron; f=0.0009
+	+el: name=Nitrogen; f=0.0329
+	+el: name=Oxygen; f=0.7449
+	+el: name=Phosphor; f=0.001
+	+el: name=Potassium; f=0.0019
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.002
+
+Tissu33: d=1.0717 g/cm3 ; n=10
+	+el: name=Carbon; f=0.1068
+	+el: name=Chlorine; f=0.003
+	+el: name=Hydrogen; f=0.1006
+	+el: name=Iron; f=0.0007
+	+el: name=Nitrogen; f=0.0298
+	+el: name=Oxygen; f=0.7447
+	+el: name=Phosphor; f=0.0069
+	+el: name=Potassium; f=0.0014
+	+el: name=Sodium; f=0.0021
+	+el: name=Sulfur; f=0.0039
+
+Tissu34: d=1.0829 g/cm3 ; n=10
+	+el: name=Carbon; f=0.1038
+	+el: name=Chlorine; f=0.003
+	+el: name=Hydrogen; f=0.0988
+	+el: name=Iron; f=0.0004
+	+el: name=Nitrogen; f=0.0268
+	+el: name=Oxygen; f=0.7444
+	+el: name=Phosphor; f=0.0128
+	+el: name=Potassium; f=0.0008
+	+el: name=Sodium; f=0.0032
+	+el: name=Sulfur; f=0.0059
+
+Tissu35: d=1.0938 g/cm3 ; n=10
+	+el: name=Carbon; f=0.1007
+	+el: name=Chlorine; f=0.003
+	+el: name=Hydrogen; f=0.0974
+	+el: name=Iron; f=0.0001
+	+el: name=Nitrogen; f=0.0237
+	+el: name=Oxygen; f=0.7441
+	+el: name=Phosphor; f=0.0186
+	+el: name=Potassium; f=0.0003
+	+el: name=Sodium; f=0.0043
+	+el: name=Sulfur; f=0.0078
+
+Tissu36: d=1.1025 g/cm3 ; n=9
+	+el: name=Calcium; f=0.0018
+	+el: name=Carbon; f=0.1064
+	+el: name=Chlorine; f=0.0029
+	+el: name=Hydrogen; f=0.0962
+	+el: name=Nitrogen; f=0.0221
+	+el: name=Oxygen; f=0.7347
+	+el: name=Phosphor; f=0.0222
+	+el: name=Sodium; f=0.0049
+	+el: name=Sulfur; f=0.0088
+
+Tissu37: d=1.1082 g/cm3 ; n=9
+	+el: name=Calcium; f=0.006
+	+el: name=Carbon; f=0.1238
+	+el: name=Chlorine; f=0.0029
+	+el: name=Hydrogen; f=0.0958
+	+el: name=Nitrogen; f=0.0224
+	+el: name=Oxygen; f=0.7132
+	+el: name=Phosphor; f=0.0229
+	+el: name=Sodium; f=0.0046
+	+el: name=Sulfur; f=0.0084
+
+Tissu38: d=1.1137 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0102
+	+el: name=Carbon; f=0.1411
+	+el: name=Chlorine; f=0.0028
+	+el: name=Hydrogen; f=0.0949
+	+el: name=Iron; f=0.0001
+	+el: name=Magnesium; f=0.0001
+	+el: name=Nitrogen; f=0.0228
+	+el: name=Oxygen; f=0.6918
+	+el: name=Phosphor; f=0.0236
+	+el: name=Potassium; f=0.0001
+	+el: name=Sodium; f=0.0044
+	+el: name=Sulfur; f=0.008
+
+Tissu39: d=1.119 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0144
+	+el: name=Carbon; f=0.1585
+	+el: name=Chlorine; f=0.0028
+	+el: name=Hydrogen; f=0.0943
+	+el: name=Iron; f=0.0001
+	+el: name=Magnesium; f=0.0001
+	+el: name=Nitrogen; f=0.0231
+	+el: name=Oxygen; f=0.6704
+	+el: name=Phosphor; f=0.0243
+	+el: name=Potassium; f=0.0001
+	+el: name=Sodium; f=0.0042
+	+el: name=Sulfur; f=0.0076
+
+Tissu4: d=0.3721 g/cm3 ; n=9
+	+el: name=Carbon; f=0.1969
+	+el: name=Chlorine; f=0.0026
+	+el: name=Hydrogen; f=0.1052
+	+el: name=Nitrogen; f=0.0265
+	+el: name=Oxygen; f=0.6611
+	+el: name=Phosphor; f=0.0016
+	+el: name=Potassium; f=0.0016
+	+el: name=Sodium; f=0.0018
+	+el: name=Sulfur; f=0.0026
+
+Tissu40: d=1.1242 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0186
+	+el: name=Carbon; f=0.1758
+	+el: name=Chlorine; f=0.0027
+	+el: name=Hydrogen; f=0.0938
+	+el: name=Iron; f=0.0002
+	+el: name=Magnesium; f=0.0002
+	+el: name=Nitrogen; f=0.0235
+	+el: name=Oxygen; f=0.6489
+	+el: name=Phosphor; f=0.025
+	+el: name=Potassium; f=0.0002
+	+el: name=Sodium; f=0.0039
+	+el: name=Sulfur; f=0.0072
+
+Tissu41: d=1.1292 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0228
+	+el: name=Carbon; f=0.1932
+	+el: name=Chlorine; f=0.0026
+	+el: name=Hydrogen; f=0.093
+	+el: name=Iron; f=0.0003
+	+el: name=Magnesium; f=0.0003
+	+el: name=Nitrogen; f=0.0238
+	+el: name=Oxygen; f=0.6275
+	+el: name=Phosphor; f=0.0257
+	+el: name=Potassium; f=0.0003
+	+el: name=Sodium; f=0.0037
+	+el: name=Sulfur; f=0.0068
+
+Tissu42: d=1.1341 g/cm3 ; n=12
+	+el: name=Calcium; f=0.027
+	+el: name=Carbon; f=0.2105
+	+el: name=Chlorine; f=0.0026
+	+el: name=Hydrogen; f=0.0927
+	+el: name=Iron; f=0.0003
+	+el: name=Magnesium; f=0.0003
+	+el: name=Nitrogen; f=0.0241
+	+el: name=Oxygen; f=0.606
+	+el: name=Phosphor; f=0.0263
+	+el: name=Potassium; f=0.0003
+	+el: name=Sodium; f=0.0035
+	+el: name=Sulfur; f=0.0064
+
+Tissu43: d=1.1388 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0312
+	+el: name=Carbon; f=0.2279
+	+el: name=Chlorine; f=0.0025
+	+el: name=Hydrogen; f=0.0917
+	+el: name=Iron; f=0.0004
+	+el: name=Magnesium; f=0.0004
+	+el: name=Nitrogen; f=0.0245
+	+el: name=Oxygen; f=0.5846
+	+el: name=Phosphor; f=0.027
+	+el: name=Potassium; f=0.0004
+	+el: name=Sodium; f=0.0033
+	+el: name=Sulfur; f=0.006
+
+Tissu44: d=1.1434 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0354
+	+el: name=Carbon; f=0.2452
+	+el: name=Chlorine; f=0.0025
+	+el: name=Hydrogen; f=0.0915
+	+el: name=Iron; f=0.0004
+	+el: name=Magnesium; f=0.0004
+	+el: name=Nitrogen; f=0.0248
+	+el: name=Oxygen; f=0.5631
+	+el: name=Phosphor; f=0.0277
+	+el: name=Potassium; f=0.0004
+	+el: name=Sodium; f=0.003
+	+el: name=Sulfur; f=0.0056
+
+Tissu45: d=1.1479 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0396
+	+el: name=Carbon; f=0.2626
+	+el: name=Chlorine; f=0.0024
+	+el: name=Hydrogen; f=0.0905
+	+el: name=Iron; f=0.0005
+	+el: name=Magnesium; f=0.0005
+	+el: name=Nitrogen; f=0.0252
+	+el: name=Oxygen; f=0.5417
+	+el: name=Phosphor; f=0.0284
+	+el: name=Potassium; f=0.0005
+	+el: name=Sodium; f=0.0028
+	+el: name=Sulfur; f=0.0052
+
+Tissu46: d=1.1522 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0439
+	+el: name=Carbon; f=0.2799
+	+el: name=Chlorine; f=0.0024
+	+el: name=Hydrogen; f=0.0899
+	+el: name=Iron; f=0.0005
+	+el: name=Magnesium; f=0.0005
+	+el: name=Nitrogen; f=0.0255
+	+el: name=Oxygen; f=0.5203
+	+el: name=Phosphor; f=0.0291
+	+el: name=Potassium; f=0.0005
+	+el: name=Sodium; f=0.0026
+	+el: name=Sulfur; f=0.0048
+
+Tissu47: d=1.1564 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0481
+	+el: name=Carbon; f=0.2973
+	+el: name=Chlorine; f=0.0023
+	+el: name=Hydrogen; f=0.0893
+	+el: name=Iron; f=0.0006
+	+el: name=Magnesium; f=0.0006
+	+el: name=Nitrogen; f=0.0259
+	+el: name=Oxygen; f=0.4988
+	+el: name=Phosphor; f=0.0298
+	+el: name=Potassium; f=0.0006
+	+el: name=Sodium; f=0.0023
+	+el: name=Sulfur; f=0.0044
+
+Tissu48: d=1.1605 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0523
+	+el: name=Carbon; f=0.3146
+	+el: name=Chlorine; f=0.0022
+	+el: name=Hydrogen; f=0.0887
+	+el: name=Iron; f=0.0007
+	+el: name=Magnesium; f=0.0007
+	+el: name=Nitrogen; f=0.0262
+	+el: name=Oxygen; f=0.4774
+	+el: name=Phosphor; f=0.0304
+	+el: name=Potassium; f=0.0007
+	+el: name=Sodium; f=0.0021
+	+el: name=Sulfur; f=0.004
+
+Tissu49: d=1.1645 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0565
+	+el: name=Carbon; f=0.332
+	+el: name=Chlorine; f=0.0022
+	+el: name=Hydrogen; f=0.0881
+	+el: name=Iron; f=0.0007
+	+el: name=Magnesium; f=0.0007
+	+el: name=Nitrogen; f=0.0265
+	+el: name=Oxygen; f=0.4559
+	+el: name=Phosphor; f=0.0311
+	+el: name=Potassium; f=0.0007
+	+el: name=Sodium; f=0.0019
+	+el: name=Sulfur; f=0.0036
+
+Tissu5: d=0.4012 g/cm3 ; n=9
+	+el: name=Carbon; f=0.2199
+	+el: name=Chlorine; f=0.0025
+	+el: name=Hydrogen; f=0.1059
+	+el: name=Nitrogen; f=0.0254
+	+el: name=Oxygen; f=0.6391
+	+el: name=Phosphor; f=0.0015
+	+el: name=Potassium; f=0.0015
+	+el: name=Sodium; f=0.0017
+	+el: name=Sulfur; f=0.0025
+
+Tissu50: d=1.1684 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0607
+	+el: name=Carbon; f=0.3493
+	+el: name=Chlorine; f=0.0021
+	+el: name=Hydrogen; f=0.0873
+	+el: name=Iron; f=0.0008
+	+el: name=Magnesium; f=0.0008
+	+el: name=Nitrogen; f=0.0269
+	+el: name=Oxygen; f=0.4345
+	+el: name=Phosphor; f=0.0318
+	+el: name=Potassium; f=0.0008
+	+el: name=Sodium; f=0.0017
+	+el: name=Sulfur; f=0.0032
+
+Tissu51: d=1.1722 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0649
+	+el: name=Carbon; f=0.3667
+	+el: name=Chlorine; f=0.0021
+	+el: name=Hydrogen; f=0.0869
+	+el: name=Iron; f=0.0008
+	+el: name=Magnesium; f=0.0008
+	+el: name=Nitrogen; f=0.0272
+	+el: name=Oxygen; f=0.413
+	+el: name=Phosphor; f=0.0325
+	+el: name=Potassium; f=0.0008
+	+el: name=Sodium; f=0.0014
+	+el: name=Sulfur; f=0.0028
+
+Tissu52: d=1.1758 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0691
+	+el: name=Carbon; f=0.384
+	+el: name=Chlorine; f=0.002
+	+el: name=Hydrogen; f=0.0862
+	+el: name=Iron; f=0.0009
+	+el: name=Magnesium; f=0.0009
+	+el: name=Nitrogen; f=0.0276
+	+el: name=Oxygen; f=0.3916
+	+el: name=Phosphor; f=0.0332
+	+el: name=Potassium; f=0.0009
+	+el: name=Sodium; f=0.0012
+	+el: name=Sulfur; f=0.0024
+
+Tissu53: d=1.1794 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0733
+	+el: name=Carbon; f=0.4014
+	+el: name=Chlorine; f=0.002
+	+el: name=Hydrogen; f=0.0857
+	+el: name=Iron; f=0.0009
+	+el: name=Magnesium; f=0.0009
+	+el: name=Nitrogen; f=0.0279
+	+el: name=Oxygen; f=0.3702
+	+el: name=Phosphor; f=0.0338
+	+el: name=Potassium; f=0.0009
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.002
+
+Tissu54: d=1.1894 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0759
+	+el: name=Carbon; f=0.3957
+	+el: name=Chlorine; f=0.0019
+	+el: name=Hydrogen; f=0.0843
+	+el: name=Iron; f=0.001
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0287
+	+el: name=Oxygen; f=0.3727
+	+el: name=Phosphor; f=0.0348
+	+el: name=Potassium; f=0.001
+	+el: name=Sodium; f=0.0009
+	+el: name=Sulfur; f=0.002
+
+Tissu55: d=1.2003 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0782
+	+el: name=Carbon; f=0.3861
+	+el: name=Chlorine; f=0.0018
+	+el: name=Hydrogen; f=0.0833
+	+el: name=Iron; f=0.001
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0295
+	+el: name=Oxygen; f=0.3794
+	+el: name=Phosphor; f=0.0359
+	+el: name=Potassium; f=0.001
+	+el: name=Sodium; f=0.0008
+	+el: name=Sulfur; f=0.002
+
+Tissu56: d=1.2111 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0804
+	+el: name=Carbon; f=0.3764
+	+el: name=Chlorine; f=0.0017
+	+el: name=Hydrogen; f=0.0824
+	+el: name=Iron; f=0.001
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0304
+	+el: name=Oxygen; f=0.3861
+	+el: name=Phosphor; f=0.0369
+	+el: name=Potassium; f=0.001
+	+el: name=Sodium; f=0.0007
+	+el: name=Sulfur; f=0.002
+
+Tissu57: d=1.2218 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0827
+	+el: name=Carbon; f=0.3667
+	+el: name=Chlorine; f=0.0016
+	+el: name=Hydrogen; f=0.0813
+	+el: name=Iron; f=0.001
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0312
+	+el: name=Oxygen; f=0.3929
+	+el: name=Phosphor; f=0.038
+	+el: name=Potassium; f=0.001
+	+el: name=Sodium; f=0.0006
+	+el: name=Sulfur; f=0.002
+
+Tissu58: d=1.2323 g/cm3 ; n=12
+	+el: name=Calcium; f=0.085
+	+el: name=Carbon; f=0.357
+	+el: name=Chlorine; f=0.0015
+	+el: name=Hydrogen; f=0.0803
+	+el: name=Iron; f=0.001
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0321
+	+el: name=Oxygen; f=0.3996
+	+el: name=Phosphor; f=0.039
+	+el: name=Potassium; f=0.001
+	+el: name=Sodium; f=0.0005
+	+el: name=Sulfur; f=0.002
+
+Tissu59: d=1.2427 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0873
+	+el: name=Carbon; f=0.3474
+	+el: name=Chlorine; f=0.0014
+	+el: name=Hydrogen; f=0.0792
+	+el: name=Iron; f=0.001
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0329
+	+el: name=Oxygen; f=0.4063
+	+el: name=Phosphor; f=0.0401
+	+el: name=Potassium; f=0.001
+	+el: name=Sodium; f=0.0004
+	+el: name=Sulfur; f=0.002
+
+Tissu6: d=0.4307 g/cm3 ; n=9
+	+el: name=Carbon; f=0.2429
+	+el: name=Chlorine; f=0.0024
+	+el: name=Hydrogen; f=0.1065
+	+el: name=Nitrogen; f=0.0242
+	+el: name=Oxygen; f=0.6171
+	+el: name=Phosphor; f=0.0014
+	+el: name=Potassium; f=0.0014
+	+el: name=Sodium; f=0.0017
+	+el: name=Sulfur; f=0.0024
+
+Tissu60: d=1.253 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0895
+	+el: name=Carbon; f=0.3377
+	+el: name=Chlorine; f=0.0013
+	+el: name=Hydrogen; f=0.0782
+	+el: name=Iron; f=0.001
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0338
+	+el: name=Oxygen; f=0.4131
+	+el: name=Phosphor; f=0.0411
+	+el: name=Potassium; f=0.001
+	+el: name=Sodium; f=0.0003
+	+el: name=Sulfur; f=0.002
+
+Tissu61: d=1.2632 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0918
+	+el: name=Carbon; f=0.328
+	+el: name=Chlorine; f=0.0012
+	+el: name=Hydrogen; f=0.0773
+	+el: name=Iron; f=0.001
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0346
+	+el: name=Oxygen; f=0.4198
+	+el: name=Phosphor; f=0.0421
+	+el: name=Potassium; f=0.001
+	+el: name=Sodium; f=0.0002
+	+el: name=Sulfur; f=0.002
+
+Tissu62: d=1.2732 g/cm3 ; n=12
+	+el: name=Calcium; f=0.0941
+	+el: name=Carbon; f=0.3184
+	+el: name=Chlorine; f=0.0011
+	+el: name=Hydrogen; f=0.0761
+	+el: name=Iron; f=0.001
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0355
+	+el: name=Oxygen; f=0.4265
+	+el: name=Phosphor; f=0.0432
+	+el: name=Potassium; f=0.001
+	+el: name=Sodium; f=0.0001
+	+el: name=Sulfur; f=0.002
+
+Tissu63: d=1.2831 g/cm3 ; n=11
+	+el: name=Calcium; f=0.0964
+	+el: name=Carbon; f=0.3087
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.075
+	+el: name=Iron; f=0.001
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0364
+	+el: name=Oxygen; f=0.4333
+	+el: name=Phosphor; f=0.0442
+	+el: name=Potassium; f=0.001
+	+el: name=Sulfur; f=0.002
+
+Tissu64: d=1.2927 g/cm3 ; n=11
+	+el: name=Calcium; f=0.0988
+	+el: name=Carbon; f=0.3009
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.0739
+	+el: name=Iron; f=0.001
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.037
+	+el: name=Oxygen; f=0.4379
+	+el: name=Phosphor; f=0.0454
+	+el: name=Potassium; f=0.001
+	+el: name=Sulfur; f=0.002
+
+Tissu65: d=1.3018 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1017
+	+el: name=Carbon; f=0.2976
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.0731
+	+el: name=Iron; f=0.001
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0372
+	+el: name=Oxygen; f=0.4377
+	+el: name=Phosphor; f=0.0467
+	+el: name=Potassium; f=0.001
+	+el: name=Sulfur; f=0.002
+
+Tissu66: d=1.3107 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1046
+	+el: name=Carbon; f=0.2943
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.0722
+	+el: name=Iron; f=0.001
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0375
+	+el: name=Oxygen; f=0.4374
+	+el: name=Phosphor; f=0.048
+	+el: name=Potassium; f=0.001
+	+el: name=Sulfur; f=0.002
+
+Tissu67: d=1.3196 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1075
+	+el: name=Carbon; f=0.2909
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.0713
+	+el: name=Iron; f=0.001
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0377
+	+el: name=Oxygen; f=0.4372
+	+el: name=Phosphor; f=0.0494
+	+el: name=Potassium; f=0.001
+	+el: name=Sulfur; f=0.002
+
+Tissu68: d=1.3283 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1104
+	+el: name=Carbon; f=0.2876
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.0704
+	+el: name=Iron; f=0.001
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0379
+	+el: name=Oxygen; f=0.437
+	+el: name=Phosphor; f=0.0507
+	+el: name=Potassium; f=0.001
+	+el: name=Sulfur; f=0.002
+
+Tissu69: d=1.33 g/cm3 ; n=12
+	+el: name=Calcium; f=0.1184
+	+el: name=Carbon; f=0.3111
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.0704
+	+el: name=Iron; f=0.0005
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0338
+	+el: name=Oxygen; f=0.4083
+	+el: name=Phosphor; f=0.0526
+	+el: name=Potassium; f=0.0005
+	+el: name=Sodium; f=0.0004
+	+el: name=Sulfur; f=0.002
+
+Tissu7: d=0.4607 g/cm3 ; n=9
+	+el: name=Carbon; f=0.2659
+	+el: name=Chlorine; f=0.0023
+	+el: name=Hydrogen; f=0.1069
+	+el: name=Nitrogen; f=0.0231
+	+el: name=Oxygen; f=0.5952
+	+el: name=Phosphor; f=0.0013
+	+el: name=Potassium; f=0.0013
+	+el: name=Sodium; f=0.0016
+	+el: name=Sulfur; f=0.0023
+
+Tissu70: d=1.33 g/cm3 ; n=10
+	+el: name=Calcium; f=0.1277
+	+el: name=Carbon; f=0.341
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.0704
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0286
+	+el: name=Oxygen; f=0.3727
+	+el: name=Phosphor; f=0.0547
+	+el: name=Sodium; f=0.0009
+	+el: name=Sulfur; f=0.002
+
+Tissu71: d=1.3442 g/cm3 ; n=11
+	+el: name=Calcium; f=0.128
+	+el: name=Carbon; f=0.3274
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.0694
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0303
+	+el: name=Oxygen; f=0.3838
+	+el: name=Phosphor; f=0.0557
+	+el: name=Potassium; f=0.0002
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.0022
+
+Tissu72: d=1.3605 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1269
+	+el: name=Carbon; f=0.3072
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.0683
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.033
+	+el: name=Oxygen; f=0.4021
+	+el: name=Phosphor; f=0.0565
+	+el: name=Potassium; f=0.0005
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.0025
+
+Tissu73: d=1.3769 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1258
+	+el: name=Carbon; f=0.287
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.0673
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0358
+	+el: name=Oxygen; f=0.4204
+	+el: name=Phosphor; f=0.0573
+	+el: name=Potassium; f=0.0007
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.0027
+
+Tissu74: d=1.3919 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1255
+	+el: name=Carbon; f=0.2702
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.0662
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.038
+	+el: name=Oxygen; f=0.435
+	+el: name=Phosphor; f=0.0581
+	+el: name=Potassium; f=0.001
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu75: d=1.4012 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1283
+	+el: name=Carbon; f=0.2665
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.0651
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0385
+	+el: name=Oxygen; f=0.4355
+	+el: name=Phosphor; f=0.0591
+	+el: name=Potassium; f=0.001
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu76: d=1.4106 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1311
+	+el: name=Carbon; f=0.2628
+	+el: name=Chlorine; f=0.001
+	+el: name=Hydrogen; f=0.0641
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.039
+	+el: name=Oxygen; f=0.436
+	+el: name=Phosphor; f=0.06
+	+el: name=Potassium; f=0.001
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu77: d=1.421 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1334
+	+el: name=Carbon; f=0.2623
+	+el: name=Chlorine; f=0.0009
+	+el: name=Hydrogen; f=0.0635
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0387
+	+el: name=Oxygen; f=0.4342
+	+el: name=Phosphor; f=0.0612
+	+el: name=Potassium; f=0.0009
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.0029
+
+Tissu78: d=1.4292 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1373
+	+el: name=Carbon; f=0.273
+	+el: name=Chlorine; f=0.0007
+	+el: name=Hydrogen; f=0.0628
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0371
+	+el: name=Oxygen; f=0.4207
+	+el: name=Phosphor; f=0.063
+	+el: name=Potassium; f=0.0007
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.0027
+
+Tissu79: d=1.4374 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1411
+	+el: name=Carbon; f=0.2837
+	+el: name=Chlorine; f=0.0005
+	+el: name=Hydrogen; f=0.0621
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0355
+	+el: name=Oxygen; f=0.4072
+	+el: name=Phosphor; f=0.0648
+	+el: name=Potassium; f=0.0005
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.0025
+
+Tissu8: d=0.4911 g/cm3 ; n=9
+	+el: name=Carbon; f=0.2889
+	+el: name=Chlorine; f=0.0022
+	+el: name=Hydrogen; f=0.1074
+	+el: name=Nitrogen; f=0.022
+	+el: name=Oxygen; f=0.5732
+	+el: name=Phosphor; f=0.0012
+	+el: name=Potassium; f=0.0012
+	+el: name=Sodium; f=0.0016
+	+el: name=Sulfur; f=0.0022
+
+Tissu80: d=1.4455 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1449
+	+el: name=Carbon; f=0.2944
+	+el: name=Chlorine; f=0.0003
+	+el: name=Hydrogen; f=0.0615
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0339
+	+el: name=Oxygen; f=0.3937
+	+el: name=Phosphor; f=0.0666
+	+el: name=Potassium; f=0.0003
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.0023
+
+Tissu81: d=1.4534 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1488
+	+el: name=Carbon; f=0.3051
+	+el: name=Chlorine; f=0.0001
+	+el: name=Hydrogen; f=0.0609
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0323
+	+el: name=Oxygen; f=0.3801
+	+el: name=Phosphor; f=0.0684
+	+el: name=Potassium; f=0.0001
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.0021
+
+Tissu82: d=1.4621 g/cm3 ; n=9
+	+el: name=Calcium; f=0.1521
+	+el: name=Carbon; f=0.3112
+	+el: name=Hydrogen; f=0.0602
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0313
+	+el: name=Oxygen; f=0.3712
+	+el: name=Phosphor; f=0.07
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.002
+
+Tissu83: d=1.4744 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1529
+	+el: name=Carbon; f=0.2951
+	+el: name=Chlorine; f=0.0002
+	+el: name=Hydrogen; f=0.0594
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0331
+	+el: name=Oxygen; f=0.3845
+	+el: name=Phosphor; f=0.0704
+	+el: name=Potassium; f=0.0002
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.0022
+
+Tissu84: d=1.4867 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1537
+	+el: name=Carbon; f=0.279
+	+el: name=Chlorine; f=0.0004
+	+el: name=Hydrogen; f=0.0586
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0349
+	+el: name=Oxygen; f=0.3977
+	+el: name=Phosphor; f=0.0708
+	+el: name=Potassium; f=0.0004
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.0024
+
+Tissu85: d=1.4989 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1545
+	+el: name=Carbon; f=0.2629
+	+el: name=Chlorine; f=0.0006
+	+el: name=Hydrogen; f=0.0578
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0368
+	+el: name=Oxygen; f=0.411
+	+el: name=Phosphor; f=0.0712
+	+el: name=Potassium; f=0.0006
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.0026
+
+Tissu86: d=1.5111 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1554
+	+el: name=Carbon; f=0.2468
+	+el: name=Chlorine; f=0.0008
+	+el: name=Hydrogen; f=0.0569
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.0386
+	+el: name=Oxygen; f=0.4242
+	+el: name=Phosphor; f=0.0717
+	+el: name=Potassium; f=0.0008
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.0028
+
+Tissu87: d=1.5228 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1566
+	+el: name=Carbon; f=0.2342
+	+el: name=Chlorine; f=0.0009
+	+el: name=Hydrogen; f=0.0562
+	+el: name=Magnesium; f=0.001
+	+el: name=Nitrogen; f=0.04
+	+el: name=Oxygen; f=0.434
+	+el: name=Phosphor; f=0.0722
+	+el: name=Potassium; f=0.0009
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu88: d=1.5334 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1589
+	+el: name=Carbon; f=0.2316
+	+el: name=Chlorine; f=0.0008
+	+el: name=Hydrogen; f=0.0553
+	+el: name=Magnesium; f=0.0011
+	+el: name=Nitrogen; f=0.04
+	+el: name=Oxygen; f=0.4341
+	+el: name=Phosphor; f=0.0733
+	+el: name=Potassium; f=0.0008
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu89: d=1.5439 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1612
+	+el: name=Carbon; f=0.229
+	+el: name=Chlorine; f=0.0007
+	+el: name=Hydrogen; f=0.0547
+	+el: name=Magnesium; f=0.0012
+	+el: name=Nitrogen; f=0.04
+	+el: name=Oxygen; f=0.4342
+	+el: name=Phosphor; f=0.0743
+	+el: name=Potassium; f=0.0007
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu9: d=0.522 g/cm3 ; n=9
+	+el: name=Carbon; f=0.3119
+	+el: name=Chlorine; f=0.0021
+	+el: name=Hydrogen; f=0.1081
+	+el: name=Nitrogen; f=0.0209
+	+el: name=Oxygen; f=0.5512
+	+el: name=Phosphor; f=0.0011
+	+el: name=Potassium; f=0.0011
+	+el: name=Sodium; f=0.0015
+	+el: name=Sulfur; f=0.0021
+
+Tissu90: d=1.5543 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1635
+	+el: name=Carbon; f=0.2263
+	+el: name=Chlorine; f=0.0006
+	+el: name=Hydrogen; f=0.0541
+	+el: name=Magnesium; f=0.0013
+	+el: name=Nitrogen; f=0.04
+	+el: name=Oxygen; f=0.4343
+	+el: name=Phosphor; f=0.0753
+	+el: name=Potassium; f=0.0006
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu91: d=1.5647 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1657
+	+el: name=Carbon; f=0.2237
+	+el: name=Chlorine; f=0.0005
+	+el: name=Hydrogen; f=0.0534
+	+el: name=Magnesium; f=0.0014
+	+el: name=Nitrogen; f=0.04
+	+el: name=Oxygen; f=0.4344
+	+el: name=Phosphor; f=0.0764
+	+el: name=Potassium; f=0.0005
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu92: d=1.575 g/cm3 ; n=11
+	+el: name=Calcium; f=0.168
+	+el: name=Carbon; f=0.221
+	+el: name=Chlorine; f=0.0003
+	+el: name=Hydrogen; f=0.0527
+	+el: name=Magnesium; f=0.0016
+	+el: name=Nitrogen; f=0.04
+	+el: name=Oxygen; f=0.4346
+	+el: name=Phosphor; f=0.0774
+	+el: name=Potassium; f=0.0003
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu93: d=1.5852 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1703
+	+el: name=Carbon; f=0.2184
+	+el: name=Chlorine; f=0.0002
+	+el: name=Hydrogen; f=0.0521
+	+el: name=Magnesium; f=0.0017
+	+el: name=Nitrogen; f=0.04
+	+el: name=Oxygen; f=0.4347
+	+el: name=Phosphor; f=0.0784
+	+el: name=Potassium; f=0.0002
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu94: d=1.5954 g/cm3 ; n=11
+	+el: name=Calcium; f=0.1726
+	+el: name=Carbon; f=0.2158
+	+el: name=Chlorine; f=0.0001
+	+el: name=Hydrogen; f=0.0512
+	+el: name=Magnesium; f=0.0018
+	+el: name=Nitrogen; f=0.04
+	+el: name=Oxygen; f=0.4348
+	+el: name=Phosphor; f=0.0795
+	+el: name=Potassium; f=0.0001
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu95: d=1.6055 g/cm3 ; n=9
+	+el: name=Calcium; f=0.1749
+	+el: name=Carbon; f=0.2131
+	+el: name=Hydrogen; f=0.0507
+	+el: name=Magnesium; f=0.0019
+	+el: name=Nitrogen; f=0.04
+	+el: name=Oxygen; f=0.4349
+	+el: name=Phosphor; f=0.0805
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu96: d=1.6162 g/cm3 ; n=9
+	+el: name=Calcium; f=0.1769
+	+el: name=Carbon; f=0.2108
+	+el: name=Hydrogen; f=0.0499
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.04
+	+el: name=Oxygen; f=0.435
+	+el: name=Phosphor; f=0.0814
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu97: d=1.6274 g/cm3 ; n=9
+	+el: name=Calcium; f=0.1787
+	+el: name=Carbon; f=0.2087
+	+el: name=Hydrogen; f=0.0492
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0402
+	+el: name=Oxygen; f=0.435
+	+el: name=Phosphor; f=0.0822
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu98: d=1.6386 g/cm3 ; n=9
+	+el: name=Calcium; f=0.1804
+	+el: name=Carbon; f=0.2067
+	+el: name=Hydrogen; f=0.0485
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0404
+	+el: name=Oxygen; f=0.435
+	+el: name=Phosphor; f=0.083
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
+Tissu99: d=1.6497 g/cm3 ; n=9
+	+el: name=Calcium; f=0.1822
+	+el: name=Carbon; f=0.2046
+	+el: name=Hydrogen; f=0.0478
+	+el: name=Magnesium; f=0.002
+	+el: name=Nitrogen; f=0.0405
+	+el: name=Oxygen; f=0.435
+	+el: name=Phosphor; f=0.0838
+	+el: name=Sodium; f=0.001
+	+el: name=Sulfur; f=0.003
+
