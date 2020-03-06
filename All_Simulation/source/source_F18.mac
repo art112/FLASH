@@ -1,0 +1,21 @@
+#	S O U R C E
+/gate/source/addSource F18
+/gate/source/F18/setActivity 100000 becquerel
+# /gate/source/F18/setActivity 0.01 becquerel
+/gate/source/F18/gps/particle ion
+/gate/source/F18/gps/ion 9 18 0 0
+# /gate/source/F18/gps/energytype Mono
+/gate/source/F18/gps/monoenergy 0.0 keV
+# /gate/source/verbose 10
+/gate/source/F18/setForcedUnstableFlag true
+# /gate/source/F18/setForcedUnstableFlag false
+/gate/source/F18/useDefaultHalfLife
+# /gate/source/F18/setForcedHalfLife 6540 s
+# /gate/source/F18/setForcedHalfLife 0.1 s
+/gate/source/F18/gps/type Volume
+/gate/source/F18/gps/shape Sphere
+/gate/source/F18/gps/radius 0.001 mm
+/gate/source/F18/gps/centre 0. 0. 0. mm
+/gate/source/F18/gps/angtype iso
+
+/gate/source/list

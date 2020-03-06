@@ -1,0 +1,20 @@
+#====================================
+#Physics GATE V7
+#====================================
+
+#None
+#/gate/physics/addProcess HadronElastic
+
+#None
+#/gate/physics/addProcess LowEnergyHadronIonisation
+#/gate/physics/processes/LowEnergyHadronIonisation/setModel Elec_Ziegler1977He
+
+#Action ++
+#/gate/physics/addProcess HadronIonisation
+
+#None
+#/gate/physics/addProcess hMultipleScattering 
+
+#None
+#/gate/physics/addProcess IonInelastic 
+#/gate/physics/processes/IonInelastic/setModel  G4LEAlphaInelastic

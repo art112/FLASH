@@ -1,0 +1,26 @@
+#====================================
+#Physics GATE V8
+#====================================
+
+/gate/physics/addProcess Decay
+/gate/physics/addProcess RadioactiveDecay
+
+
+/gate/physics/addPhysicsList QGSP_BIC_HP_EMZ
+
+/gate/physics/SetMaxStepSizeInRegion layer 10 um
+/gate/physics/ActivateStepLimiter proton
+
+/gate/physics/addAtomDeexcitation
+/gate/physics/processes/PhotoElectric/setAugerElectron false
+/process/em/fluo false
+/process/em/pixe false
+/process/em/auger false
+/process/em/augerCascade false
+
+
+
+#/gate/physics/addProcess EmStandardPhysics_option4
+
+#/gate/physics/processes/PhotoElectric/setDeltaRayCut [value] [unit]
+#/gate/physics/processes/PhotoElectric/setXRayCut 0. MeV

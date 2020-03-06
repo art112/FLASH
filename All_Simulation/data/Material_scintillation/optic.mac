@@ -1,0 +1,5 @@
+
+#	S U R F A C E S
+/gate/ActiveZone/surfaces/name ActiveZone_TeflonCyl
+/gate/ActiveZone/surfaces/insert TeflonCyl
+/gate/ActiveZone/surfaces/ActiveZone_TeflonCyl/setSurface rough_teflon_wrapped

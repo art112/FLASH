@@ -1,0 +1,23 @@
+#	S O U R C E
+/gate/source/addSource Sc441
+/gate/source/Sc441/setActivity 20000 becquerel
+/gate/source/Sc441/gps/particle ion
+/gate/source/Sc441/gps/ion 21 44 0 0
+/gate/source/Sc441/gps/energytype Mono
+/gate/source/Sc441/gps/monoenergy 0.0 keV
+
+#
+### Corespond à une source de 44Sc distribuée uniformement dans phantomSmall.mac
+#
+
+/gate/source/Sc441/setForcedUnstableFlag true
+/gate/source/Sc441/useDefaultHalfLife
+/gate/source/Sc441/gps/type Volume
+/gate/source/Sc441/gps/shape Cylinder
+/gate/source/Sc441/gps/radius 24 mm
+/gate/source/Sc441/gps/halfz 59 mm
+/gate/source/Sc441/gps/angtype iso
+/gate/source/Sc441/gps/centre 0 0 0 mm
+
+
+/gate/source/list

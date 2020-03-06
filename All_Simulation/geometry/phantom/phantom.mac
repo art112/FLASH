@@ -1,0 +1,10 @@
+
+#	Sphere of water
+/gate/world/daughters/name filter
+/gate/world/daughters/insert sphere
+/gate/filter/setMaterial Water
+/gate/filter/geometry/setRmin 0 cm
+/gate/filter/geometry/setRmax 1 cm
+/gate/filter/placement/setTranslation 0 0 0 cm
+/gate/filter/vis/setColor magenta
+/gate/filter/vis/forceSolid 

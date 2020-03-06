@@ -1,0 +1,41 @@
+
+#This actor allows extracting EM properties for all materials defined in a simulation, as listed below:
+
+#Density (mass density in g/cm³)
+#e-density (electronic density in e-/mm³)
+#RadLength (radiation length in mm)
+#I (ionization potential in eV)
+#EM-DEDX (EM mass stopping power in MeV.cm²/g)
+#Nucl-DEDX (nuclear mass stopping power in MeV.cm²/g)
+#Tot-DEDX (total mass stopping power in MeV.cm²/g)
+#EM properties are calculated relative to a specific particle type and energy, as defined by the user. For instance, EM properties #corresponding to a 30 MeV neutron can be calculated using the following command lines:
+
+/gate/actor/addActor EmCalculatorActor            StoppingPower_68_MeV
+/gate/actor/StoppingPower_68_MeV/setParticleName               proton
+/gate/actor/StoppingPower_68_MeV/setEnergy                     68 MeV
+/gate/actor/StoppingPower_68_MeV/save                          StoppingPower_68_MeV.txt
+
+/gate/actor/addActor EmCalculatorActor            StoppingPower_1_MeV
+/gate/actor/StoppingPower_1_MeV/setParticleName               proton
+/gate/actor/StoppingPower_1_MeV/setEnergy                     1 MeV
+/gate/actor/StoppingPower_1_MeV/save                          StoppingPower_1_MeV.txt
+
+/gate/actor/addActor EmCalculatorActor            StoppingPower_10_MeV
+/gate/actor/StoppingPower_10_MeV/setParticleName               proton
+/gate/actor/StoppingPower_10_MeV/setEnergy                     10 MeV
+/gate/actor/StoppingPower_10_MeV/save                          StoppingPower_10_MeV.txt
+
+/gate/actor/addActor EmCalculatorActor            StoppingPower_60_MeV
+/gate/actor/StoppingPower_60_MeV/setParticleName               proton
+/gate/actor/StoppingPower_60_MeV/setEnergy                     60 MeV
+/gate/actor/StoppingPower_60_MeV/save                          StoppingPower_60_MeV.txt
+
+/gate/actor/addActor EmCalculatorActor            StoppingPower_65_MeV
+/gate/actor/StoppingPower_65_MeV/setParticleName               proton
+/gate/actor/StoppingPower_65_MeV/setEnergy                     65 MeV
+/gate/actor/StoppingPower_65_MeV/save                          StoppingPower_65_MeV.txt
+
+/gate/actor/addActor EmCalculatorActor            StoppingPower_70_MeV
+/gate/actor/StoppingPower_70_MeV/setParticleName               proton
+/gate/actor/StoppingPower_70_MeV/setEnergy                     70 MeV
+/gate/actor/StoppingPower_70_MeV/save                          StoppingPower_70_MeV.txt

@@ -1,0 +1,18 @@
+/gate/source/addSource singleelectron
+/gate/source/singleelectron/setActivity 20000. becquerel #10
+/gate/source/singleelectron/gps/particle e-
+/gate/source/singleelectron/gps/energytype Mono
+/gate/source/singleelectron/gps/monoenergy 0.511 MeV
+#0.48
+/gate/source/singleelectron/gps/type Volume
+/gate/source/singleelectron/gps/shape Para
+/gate/source/singleelectron/gps/halfx 0. cm
+/gate/source/singleelectron/gps/halfy 0. cm
+/gate/source/singleelectron/gps/halfz 0. cm
+/gate/source/singleelectron/gps/centre 0. 150. -15. mm
+/gate/source/singleelectron/gps/angtype iso
+/gate/source/singleelectron/gps/mintheta 90. deg
+/gate/source/singleelectron/gps/maxtheta 90. deg
+/gate/source/singleelectron/gps/minphi  90. deg
+/gate/source/singleelectron/gps/maxphi 90. deg
+/gate/source/list

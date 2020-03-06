@@ -1,0 +1,14 @@
+#	P H A N T O M
+/gate/world/daughters/name NEMACylinder
+/gate/world/daughters/insert cylinder
+/gate/NEMACylinder/setMaterial Water
+/gate/NEMACylinder/geometry/setRmax   25 mm
+/gate/NEMACylinder/geometry/setHeight 120 mm
+/gate/NEMACylinder/placement/setTranslation 0 0 0 cm
+/gate/NEMACylinder/vis/setColor magenta
+/gate/NEMACylinder/vis/forceSolid 
+
+
+## /gate/NEMACylinder/attachPhantomSD
+## /gate/endshielding/attachPhantomSD
+## /gate/septa/attachPhantomSD

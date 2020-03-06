@@ -1,0 +1,18 @@
+#	S O U R C E Pota40
+/gate/source/addSource Pota40
+/gate/source/Pota40/setActivity    20000. becquerel
+/gate/source/Pota40/gps/particle   gamma
+/gate/source/Pota40/gps/energytype Mono
+/gate/source/Pota40/gps/monoenergy 1.461  MeV
+/gate/source/Pota40/gps/type       Volume
+/gate/source/Pota40/gps/shape      Cylinder
+/gate/source/Pota40/gps/radius     450 mm
+/gate/source/Pota40/gps/halfz      250 mm
+/gate/source/Pota40/gps/angtype    iso
+/gate/source/Pota40/gps/mintheta     0 deg
+/gate/source/Pota40/gps/maxtheta   180 deg
+/gate/source/Pota40/gps/minphi    -180 deg
+/gate/source/Pota40/gps/maxphi     180 deg
+/gate/source/Pota40/gps/confine    K40_P
+
+/gate/source/list

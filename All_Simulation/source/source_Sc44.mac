@@ -1,0 +1,17 @@
+#	S O U R C E
+/gate/source/addSource Sc44
+/gate/source/Sc44/setActivity 10000 becquerel
+/gate/source/Sc44/gps/particle ion
+/gate/source/Sc44/gps/ion 21 44 0 0
+/gate/source/Sc44/gps/energytype Mono
+/gate/source/Sc44/gps/monoenergy 0.0 keV
+
+/gate/source/Sc44/setForcedUnstableFlag true
+/gate/source/Sc44/useDefaultHalfLife
+/gate/source/Sc44/gps/type Volume
+/gate/source/Sc44/gps/shape Sphere
+/gate/source/Sc44/gps/radius 0.001 mm
+/gate/source/Sc44/gps/centre 0. 0. 0. mm
+/gate/source/Sc44/gps/angtype iso
+
+/gate/source/list

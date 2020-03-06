@@ -1,0 +1,83 @@
+#====================================================================
+#====================================================================
+#Système de détection Cube_After
+#====================================================================
+#====================================================================
+
+#====================================================================
+#Phase space actor
+#====================================================================
+
+/gate/actor/addActor PhaseSpaceActor               frite_Cube_After
+/gate/actor/frite_Cube_After/save                     output/frite_Cube_After_phasespaceactor.root
+/gate/actor/frite_Cube_After/attachTo                 Cube_After
+/gate/actor/frite_Cube_After/enableProductionProcess  false
+
+/gate/actor/frite_Cube_After/enableEkine              true
+/gate/actor/frite_Cube_After/enableXPosition          true
+/gate/actor/frite_Cube_After/enableYPosition          true
+/gate/actor/frite_Cube_After/enableZPosition          true
+/gate/actor/frite_Cube_After/enableXDirection         false
+/gate/actor/frite_Cube_After/enableYDirection         false
+/gate/actor/frite_Cube_After/enableZDirection         false
+/gate/actor/frite_Cube_After/enableProductionVolume   true
+/gate/actor/frite_Cube_After/enableProductionProcess  true
+/gate/actor/frite_Cube_After/enableParticleName       true
+/gate/actor/frite_Cube_After/enableWeight             false
+/gate/actor/frite_Cube_After/addFilter                       particleFilter
+/gate/actor/frite_Cube_After/particleFilter/addParticle      proton
+
+#====================================================================
+#DOSE ACTOR All
+#====================================================================
+/gate/actor/addActor DoseActor dose_Cube_after
+/gate/actor/dose_Cube_after/save output/dose_Cube_after_All.root
+/gate/actor/dose_Cube_after/attachTo Cube_After
+
+/gate/actor/dose_Cube_after/setResolution 1 1 500
+/gate/actor/dose_Cube_after/saveEveryNSeconds 60
+/gate/actor/dose_Cube_after/stepHitType random
+
+/gate/actor/dose_Cube_after/enableEdep true
+/gate/actor/dose_Cube_after/enableUncertaintyEdep true
+
+/gate/actor/dose_Cube_after/enableDose true
+/gate/actor/dose_Cube_after/enableUncertaintyDose true
+
+/gate/actor/dose_Cube_after/enableDoseToWater true
+/gate/actor/dose_Cube_after/enableUncertaintyDoseToWater true
+#/gate/actor/dose_Cube_after/normaliseDoseToWater     true
+
+#/gate/actor/dose_Cube_after/normaliseDoseToMax     true
+/gate/actor/dose_Cube_after/normaliseDoseToIntegral   false
+
+/gate/actor/dose_Cube_after/enableNumberOfHits true
+
+#====================================================================
+#DOSE ACTOR neutron
+#====================================================================
+/gate/actor/addActor DoseActor dose_Cube_after_neutron
+/gate/actor/dose_Cube_after_neutron/save output/dose_Cube_after_neutron.root
+/gate/actor/dose_Cube_after_neutron/attachTo Cube_After
+
+/gate/actor/dose_Cube_after_neutron/setResolution 1 1 500
+/gate/actor/dose_Cube_after_neutron/saveEveryNSeconds 60
+/gate/actor/dose_Cube_after_neutron/stepHitType random
+
+/gate/actor/dose_Cube_after_neutron/enableEdep true
+/gate/actor/dose_Cube_after_neutron/enableUncertaintyEdep true
+
+/gate/actor/dose_Cube_after_neutron/enableDose true
+/gate/actor/dose_Cube_after_neutron/enableUncertaintyDose true
+
+/gate/actor/dose_Cube_after_neutron/enableDoseToWater true
+/gate/actor/dose_Cube_after_neutron/enableUncertaintyDoseToWater true
+#/gate/actor/dose_Cube_after_neutron/normaliseDoseToWater     true
+
+#/gate/actor/dose_Cube_after_neutron/normaliseDoseToMax     true
+/gate/actor/dose_Cube_after_neutron/normaliseDoseToIntegral   false
+
+/gate/actor/dose_Cube_after_neutron/enableNumberOfHits true
+
+/gate/actor/dose_Cube_after_neutron/addFilter                       particleFilter
+/gate/actor/dose_Cube_after_neutron/particleFilter/addParticle      neutron

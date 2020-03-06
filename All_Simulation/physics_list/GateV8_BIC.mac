@@ -1,0 +1,21 @@
+#====================================
+#Physics GATE V8
+#====================================
+
+
+/gate/physics/processes/PhotoElectric/setAugerElectron false
+/process/em/fluo false
+/process/em/pixe false
+/process/em/auger false
+/process/em/augerCascade false
+
+
+/gate/physics/addPhysicsList QGSP_BIC_EMZ
+
+/gate/physics/addProcess Decay
+/gate/physics/addProcess RadioactiveDecay
+
+
+
+#/gate/physics/processes/PhotoElectric/setDeltaRayCut [value] [unit]
+#/gate/physics/processes/PhotoElectric/setXRayCut 0. MeV

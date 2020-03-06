@@ -1,0 +1,229 @@
+# Arthur -> 16/12/19 | Origine -> Sophie
+
+#=====================================================
+# VERBOSITY
+#=====================================================
+/control/execute mac/verbose.mac
+
+#=====================================================
+# VISUALISATION
+#=====================================================
+#/control/execute mac/visu_CT.mac
+
+#=====================================================
+#Geometry Material
+#=====================================================
+
+# warning custom GateMaterials !
+/gate/geometry/setMaterialDatabase data/GateMaterials.db
+
+/gate/geometry/setIonisationPotential Air 85.7 eV
+/gate/geometry/setIonisationPotential ICRU_LungInflated 75.2 eV
+#/gate/geometry/setIonisationPotential RS-Muscle 75 eV
+#/gate/geometry/setIonisationPotential RS-bone1 75 eV
+
+#/gate/geometry/setIonisationPotential Water 75 eV
+#/gate/geometry/setIonisationPotential G4_WATER 75 eV
+#/gate/geometry/setIonisationPotential ICRU_CompactBone 91.9 eV
+#/gate/geometry/setIonisationPotential Air_NIST 85.7 eV
+
+#=====================================================
+#World
+#=====================================================
+/gate/world/geometry/setXLength 1.0 m
+/gate/world/geometry/setYLength 1.0 m
+/gate/world/geometry/setZLength 4.0 m
+/gate/world/setMaterial G4_AIR
+
+
+#=====================================================
+#System
+#=====================================================
+
+/control/execute geometry/Kapton_Collimateur_Tungsten_CorrectionCharbel.mac
+/control/execute geometry/Kapton_Collimateur_Tungsten_CorrectionCharbel_Frite_PhaseSpaceActor.mac
+
+
+
+
+#===========================================
+# CIBLE 
+#===========================================
+
+/gate/world/daughters/name         InputImageOfProtocol 
+/gate/world/daughters/insert       ImageNestedParametrisedVolume
+/gate/InputImageOfProtocol/geometry/SetImage data/CT2/CT1.2.826.0.1.3680043.8.176.20170228111911508.3000.58473.dcm
+/gate/geometry/setMaterialDatabase         data/seuillage.db 
+/gate/InputImageOfProtocol/geometry/SetHUToMaterialFile  data/seuillage.txt 
+/gate/InputImageOfProtocol/vis/setColor cyan
+/gate/InputImageOfProtocol/vis/forceSolid
+/gate/InputImageOfProtocol/placement/setTranslation -1.2 0. 171 cm
+/gate/InputImageOfProtocol/placement/setRotationAxis 0 1 0
+/gate/InputImageOfProtocol/placement/setRotationAngle 90. deg
+/gate/InputImageOfProtocol/geometry/buildAndDumpLabeledImage output/InputImageOfProtocolTEST_MATERIAU.hdr
+/gate/InputImageOfProtocol/vis/forceWireframe
+/gate/geometry/rebuild
+
+
+/control/execute geometry/SystemeDetectionApresSouris.mac
+
+#/gate/world/daughters/name cuve
+#/gate/world/daughters/insert box
+#/gate/cuve/setMaterial PMMA
+#/gate/cuve/geometry/setXLength 5. cm
+#/gate/cuve/geometry/setYLength 5. cm
+#/gate/cuve/geometry/setZLength 5. cm
+#/gate/cuve/vis/setColor cyan
+#/gate/cuve/vis/forceWireframe
+#/gate/cuve/vis/forceSolid
+#/gate/cuve/placement/setTranslation 0. 0. 180. cm
+
+
+#====================================
+#Physics GATE
+#====================================
+
+#/control/execute physics_list/GateV8_BIC.mac
+/control/execute physics_list/GateV8_BIC_HP.mac
+#/control/execute physics_list/GateV7.mac
+
+#====================================
+
+
+#cut world
+/gate/physics/Gamma/SetCutInRegion world 10 mm
+/gate/physics/Electron/SetCutInRegion world 10 mm
+/gate/physics/Proton/SetCutInRegion world 10 mm
+/gate/physics/Positron/SetCutInRegion world 10 mm
+
+#/gate/physics/Gamma/SetCutInRegion colli1 10 mm
+#/gate/physics/Electron/SetCutInRegion colli1 10 mm
+#/gate/physics/Proton/SetCutInRegion colli1 10 mm
+#/gate/physics/Positron/SetCutInRegion colli1 10 mm
+
+
+#/gate/physics/Gamma/SetCutInRegion InputImageOfProtocol 0.1 mm
+#/gate/physics/Electron/SetCutInRegion InputImageOfProtocol 0.1 mm
+#/gate/physics/Proton/SetCutInRegion InputImageOfProtocol 0.1 mm
+#/gate/physics/Positron/SetCutInRegion InputImageOfProtocol 0.1 mm
+
+/gate/physics/Gamma/SetCutInRegion Cube_After 0.1 mm
+/gate/physics/Electron/SetCutInRegion Cube_After 0.1 mm
+/gate/physics/Proton/SetCutInRegion Cube_After 0.1 mm
+/gate/physics/Positron/SetCutInRegion Cube_After 0.1 mm
+
+/gate/physics/displayCuts
+
+#steplimiter
+#/gate/physics/SetMaxStepSizeInRegion InputImageOfProtocol 0.1 mm
+#/gate/physics/SetMaxStepSizeInRegion cuve 0.1 mm
+
+
+/gate/physics/setEMin 0.1 keV
+/gate/physics/setEMax 10 GeV
+
+/gate/physics/setDEDXBinning 500
+/gate/physics/setLambdaBinning 500
+
+
+#====================================
+#Actor
+#====================================
+
+#/gate/output/allowNoOutput
+
+#DOSE ACTOR
+/gate/actor/addActor DoseActor dose
+/gate/actor/dose/save output/souris.hdr
+/gate/actor/dose/attachTo InputImageOfProtocol
+/gate/actor/dose/setResolution 254 195 523
+/gate/actor/dose/saveEveryNSeconds 60
+/gate/actor/dose/stepHitType random
+/gate/actor/dose/enableEdep true
+/gate/actor/dose/enableUncertaintyEdep true
+/gate/actor/dose/enableDose true
+/gate/actor/dose/enableUncertaintyDose true
+/gate/actor/dose/enableDoseToWater true
+/gate/actor/dose/enableUncertaintyDoseToWater true
+#/gate/actor/dose/enableNumberOfHits true
+#/gate/actor/dose/normaliseDoseToWater     true
+#/gate/actor/dose/normaliseDoseToMax     true
+#/gate/actor/dose/normaliseDoseToIntegral   true
+
+
+#DOSE ACTOR
+
+/control/execute geometry/SystemeDetectionApresSouris_Actor.mac
+
+#/gate/actor/addActor DoseActor dose-cuve
+#/gate/actor/dose-cuve/save output/cuve.root
+#/gate/actor/dose-cuve/attachTo cuve
+#/gate/actor/dose-cuve/setResolution 1 1 500
+#/gate/actor/dose-cuve/saveEveryNSeconds 60
+#/gate/actor/dose-cuve/stepHitType random
+#/gate/actor/dose-cuve/enableDose true
+#/gate/actor/dose-cuve/enableUncertaintyDose true
+
+
+# Pemet de retrouver les émméteurs beta+
+/control/execute geometry/BetaPlus_Actor.mac
+
+# Stopping Power
+/control/execute geometry/Stopping_Power.mac
+
+# Pemet de caracteriser la ligne
+#/control/execute geometry/SystemeDetectionApresLigne_Actor.mac
+
+# Enregistre les particules qui traverses la ligne
+/control/execute geometry/Kapton_Collimateur_Tungsten_CorrectionCharbel_Frite_PhaseSpaceActor_Actor.mac
+
+
+#====================================
+#Initialization
+#====================================
+
+/gate/run/initialize
+
+
+#====================================
+#Source
+#====================================
+
+#type
+/gate/source/addSource pbeam gps
+/gate/source/pbeam/gps/particle proton
+
+
+#forme
+/gate/source/pbeam/gps/type Beam
+/gate/source/pbeam/gps/shape Circle
+
+/gate/source/pbeam/gps/pos/sigma_x 2 mm
+/gate/source/pbeam/gps/pos/sigma_y 3 mm
+
+#localisation
+/gate/source/pbeam/gps/centre 0 0 -0.01 mm
+/gate/source/pbeam/gps/direction 0 0 1
+
+#energie
+/gate/source/pbeam/gps/ene/mono 68 MeV
+#/gate/source/pbeam/gps/ene/type Gauss
+#/gate/source/pbeam/gps/ene/sigma 0.68 MeV
+
+#/gate/source/pbeam/gps/setTestFlag true
+
+#====================================
+#Initialization
+#====================================
+
+#/gate/run/initialize
+
+#graine 
+/gate/random/setEngineName MersenneTwister
+/gate/random/setEngineSeed auto
+
+#nb particule
+#/gate/application/setTotalNumberOfPrimaries 100000
+/gate/application/setTotalNumberOfPrimaries 25000000
+/gate/application/start
+

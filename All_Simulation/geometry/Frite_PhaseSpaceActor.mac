@@ -1,0 +1,118 @@
+#################################################################
+#################################################################
+
+# "Frite" pour lesp hase space Actor
+
+
+/gate/world/daughters/name frite_colli_before
+/gate/world/daughters/insert box
+/gate/frite_colli_before/setMaterial G4_AIR
+/gate/frite_colli_before/geometry/setXLength 40 cm
+/gate/frite_colli_before/geometry/setYLength 40 cm
+/gate/frite_colli_before/geometry/setZLength 0.01 cm
+/gate/frite_colli_before/placement/setTranslation 0. 0. 162.495 cm
+/gate/frite_colli_before/vis/setColor magenta
+/gate/frite_colli_before/vis/forceSolid
+
+/gate/world/daughters/name frite_colli_after
+/gate/world/daughters/insert box
+/gate/frite_colli_after/setMaterial G4_AIR
+/gate/frite_colli_after/geometry/setXLength 40 cm
+/gate/frite_colli_after/geometry/setYLength 40 cm
+/gate/frite_colli_after/geometry/setZLength 0.01 cm
+/gate/frite_colli_after/placement/setTranslation 0. 0. 167.505 cm
+/gate/frite_colli_after/vis/setColor magenta
+/gate/frite_colli_after/vis/forceSolid
+
+
+
+
+
+
+### Feuille de cuivre
+
+/gate/world/daughters/name frite_cuivre_before
+/gate/world/daughters/insert box
+/gate/frite_cuivre_before/setMaterial G4_AIR
+/gate/frite_cuivre_before/geometry/setXLength 40 cm
+/gate/frite_cuivre_before/geometry/setYLength 40 cm
+/gate/frite_cuivre_before/geometry/setZLength 0.01 cm
+/gate/frite_cuivre_before/placement/setTranslation 0. 0. 160.9949 cm
+/gate/frite_cuivre_before/vis/setColor magenta
+/gate/frite_cuivre_before/vis/forceSolid
+
+/gate/world/daughters/name frite_cuivre_after
+/gate/world/daughters/insert box
+/gate/frite_cuivre_after/setMaterial G4_AIR
+/gate/frite_cuivre_after/geometry/setXLength 40 cm
+/gate/frite_cuivre_after/geometry/setYLength 40 cm
+/gate/frite_cuivre_after/geometry/setZLength 0.01 cm
+/gate/frite_cuivre_after/placement/setTranslation 0. 0. 161.0051 cm
+/gate/frite_cuivre_after/vis/setColor magenta
+/gate/frite_cuivre_after/vis/forceSolid
+
+
+
+
+
+/gate/world/daughters/name frite_DetecteurCharbel_before
+/gate/world/daughters/insert box
+/gate/frite_DetecteurCharbel_before/setMaterial G4_AIR
+/gate/frite_DetecteurCharbel_before/geometry/setXLength 40 cm
+/gate/frite_DetecteurCharbel_before/geometry/setYLength 40 cm
+/gate/frite_DetecteurCharbel_before/geometry/setZLength 0.01 cm
+/gate/frite_DetecteurCharbel_before/placement/setTranslation 0. 0. 2.00767 cm
+/gate/frite_DetecteurCharbel_before/vis/setColor magenta
+/gate/frite_DetecteurCharbel_before/vis/forceSolid
+
+/gate/world/daughters/name frite_DetecteurCharbel_after
+/gate/world/daughters/insert box
+/gate/frite_DetecteurCharbel_after/setMaterial G4_AIR
+/gate/frite_DetecteurCharbel_after/geometry/setXLength 40 cm
+/gate/frite_DetecteurCharbel_after/geometry/setYLength 40 cm
+/gate/frite_DetecteurCharbel_after/geometry/setZLength 0.01 cm
+/gate/frite_DetecteurCharbel_after/placement/setTranslation 0. 0. 7.02167 cm
+/gate/frite_DetecteurCharbel_after/vis/setColor magenta
+/gate/frite_DetecteurCharbel_after/vis/forceSolid
+
+
+
+
+/gate/world/daughters/name frite_Tungsten_before
+/gate/world/daughters/insert box
+/gate/frite_Tungsten_before/setMaterial G4_AIR
+/gate/frite_Tungsten_before/geometry/setXLength 40 cm
+/gate/frite_Tungsten_before/geometry/setYLength 40 cm
+/gate/frite_Tungsten_before/geometry/setZLength 0.01 cm
+/gate/frite_Tungsten_before/placement/setTranslation 0. 0. 1.0025 cm
+/gate/frite_Tungsten_before/vis/setColor magenta
+/gate/frite_Tungsten_before/vis/forceSolid
+
+/gate/world/daughters/name frite_Tungsten_after
+/gate/world/daughters/insert box
+/gate/frite_Tungsten_after/setMaterial G4_AIR
+/gate/frite_Tungsten_after/geometry/setXLength 40 cm
+/gate/frite_Tungsten_after/geometry/setYLength 40 cm
+/gate/frite_Tungsten_after/geometry/setZLength 0.01 cm
+/gate/frite_Tungsten_after/placement/setTranslation 0. 0. 1.01767 cm
+/gate/frite_Tungsten_after/vis/setColor magenta
+/gate/frite_Tungsten_after/vis/forceSolid
+
+
+
+
+
+/gate/world/daughters/name frite_Kapton_after
+/gate/world/daughters/insert box
+/gate/frite_Kapton_after/setMaterial G4_AIR
+/gate/frite_Kapton_after/geometry/setXLength 40 cm
+/gate/frite_Kapton_after/geometry/setYLength 40 cm
+/gate/frite_Kapton_after/geometry/setZLength 0.01 cm
+/gate/frite_Kapton_after/placement/setTranslation 0. 0. 0.08 cm
+/gate/frite_Kapton_after/vis/setColor magenta
+/gate/frite_Kapton_after/vis/forceSolid
+
+# Kapton before attach volume kapton
+
+
+

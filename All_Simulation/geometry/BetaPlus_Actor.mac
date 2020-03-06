@@ -1,0 +1,38 @@
+/gate/actor/addActor PhaseSpaceActor              Phasespaceactor_Ions
+/gate/actor/Phasespaceactor_Ions/save                     output/Phasespaceactor_Ions.root
+/gate/actor/Phasespaceactor_Ions/attachTo                 world
+/gate/actor/Phasespaceactor_Ions/enableEkine              true
+/gate/actor/Phasespaceactor_Ions/enableVertexEkine    true
+/gate/actor/Phasespaceactor_Ions/enableXPosition          true
+/gate/actor/Phasespaceactor_Ions/enableYPosition          true
+/gate/actor/Phasespaceactor_Ions/enableZPosition          true
+/gate/actor/Phasespaceactor_Ions/enableXDirection         false
+/gate/actor/Phasespaceactor_Ions/enableYDirection         false
+/gate/actor/Phasespaceactor_Ions/enableZDirection         false
+/gate/actor/Phasespaceactor_Ions/enableProductionVolume   true
+/gate/actor/Phasespaceactor_Ions/enableProductionProcess  true
+/gate/actor/Phasespaceactor_Ions/enableParticleName       true
+/gate/actor/Phasespaceactor_Ions/enableWeight             false
+/gate/actor/Phasespaceactor_Ions/addFilter                           particleFilter
+/gate/actor/Phasespaceactor_Ions/particleFilter/addParticle      GenericIon
+#/gate/actor/Phasespaceactor_Ions/particleFilter/addParentParticle   proton
+#/gate/actor/Phasespaceactor_Ions/particleFilter/addParentParticle   neutron
+
+/gate/actor/addActor PhaseSpaceActor              Phasespaceactor_Positons
+/gate/actor/Phasespaceactor_Positons/save                     output/Phasespaceactor_Positons.root
+/gate/actor/Phasespaceactor_Positons/attachTo                 world
+/gate/actor/Phasespaceactor_Positons/enableEkine              true
+/gate/actor/Phasespaceactor_Positons/enableVertexEkine        true
+/gate/actor/Phasespaceactor_Positons/enableXPosition          true
+/gate/actor/Phasespaceactor_Positons/enableYPosition          true
+/gate/actor/Phasespaceactor_Positons/enableZPosition          true
+/gate/actor/Phasespaceactor_Positons/enableXDirection         false
+/gate/actor/Phasespaceactor_Positons/enableYDirection         false
+/gate/actor/Phasespaceactor_Positons/enableZDirection         false
+/gate/actor/Phasespaceactor_Positons/enableProductionVolume   true
+/gate/actor/Phasespaceactor_Positons/enableProductionProcess  true
+/gate/actor/Phasespaceactor_Positons/enableParticleName       true
+/gate/actor/Phasespaceactor_Positons/enableWeight             false
+/gate/actor/Phasespaceactor_Positons/addFilter                           particleFilter
+/gate/actor/Phasespaceactor_Positons/particleFilter/addParticle e+
+#/gate/actor/Phasespaceactor_Positons/particleFilter/addParentParticle GenericIon

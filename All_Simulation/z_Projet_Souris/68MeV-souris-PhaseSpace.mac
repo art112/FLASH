@@ -1,0 +1,123 @@
+# Arthur -> 16/12/19 | Origine -> Sophie
+
+#=====================================================
+# VERBOSITY
+#=====================================================
+/control/execute mac/verbose.mac
+
+#=====================================================
+# VISUALISATION
+#=====================================================
+/control/execute mac/visu.mac
+
+#=====================================================
+#Geometry Material
+#=====================================================
+
+# warning custom GateMaterials !
+/gate/geometry/setMaterialDatabase data/GateMaterials.db
+#/gate/geometry/setIonisationPotential Water 75 eV
+#/gate/geometry/setIonisationPotential G4_WATER 75 eV
+#/gate/geometry/setIonisationPotential ICRU_CompactBone 91.9 eV
+#/gate/geometry/setIonisationPotential Air_NIST 85.7 eV
+
+#=====================================================
+#World
+#=====================================================
+/gate/world/geometry/setXLength 1.0 m
+/gate/world/geometry/setYLength 1.0 m
+/gate/world/geometry/setZLength 4.0 m
+/gate/world/setMaterial Air
+
+
+#=====================================================
+#System
+#=====================================================
+
+/control/execute geometry/Kapton_Collimateur_Tungsten.mac
+
+#/control/execute geometry/Frite_PhaseSpaceActor.mac
+
+#/control/execute geometry/Kapton_Collimateur.mac
+
+
+#===========================================
+# CIBLE 
+#===========================================
+
+
+
+
+#====================================
+#Physics GATE
+#====================================
+
+/control/execute physics_list/GateV8_BIC.mac
+#/control/execute physics_list/GateV7.mac
+
+#====================================
+
+
+#cut world
+/gate/physics/Gamma/SetCutInRegion world 10 mm
+/gate/physics/Electron/SetCutInRegion world 10 mm
+/gate/physics/Proton/SetCutInRegion world 10 mm
+/gate/physics/Positron/SetCutInRegion world 10 mm
+
+#/gate/physics/Gamma/SetCutInRegion colli1 10 mm
+#/gate/physics/Electron/SetCutInRegion colli1 10 mm
+#/gate/physics/Proton/SetCutInRegion colli1 10 mm
+#/gate/physics/Positron/SetCutInRegion colli1 10 mm
+
+
+/gate/physics/displayCuts
+
+
+
+/gate/physics/setEMin 0.1 keV
+/gate/physics/setEMax 10 GeV
+
+/gate/physics/setDEDXBinning 500
+/gate/physics/setLambdaBinning 500
+
+
+#====================================
+#Actor
+#====================================
+
+/gate/output/allowNoOutput
+
+#/control/execute geometry/Frite_PhaseSpaceActor_Actor.mac
+
+#====================================
+#Initialization
+#====================================
+
+/gate/run/initialize
+
+#====================================
+#Source
+#====================================
+
+
+
+#type
+/gate/source/addSource  pbeam  phaseSpace
+/gate/source/pbeam/addPhaseSpaceFile ./output2/frite_colli_after_phasespaceactor.root
+
+#====================================
+#Initialization
+#====================================
+
+#/gate/run/initialize
+
+#graine 
+/gate/random/setEngineName MersenneTwister
+/gate/random/setEngineSeed auto
+
+#nb particule
+/gate/application/setTotalNumberOfPrimaries 1000
+#/gate/application/setTotalNumberOfPrimaries 1000000
+/gate/application/start
+
+# vv output/projection.mhd

@@ -1,0 +1,161 @@
+# Arthur -> 16/12/19 | Origine -> Sophie
+
+#=====================================================
+# VERBOSITY
+#=====================================================
+/control/execute mac/verbose.mac
+
+#=====================================================
+# VISUALISATION
+#=====================================================
+#/control/execute mac/visu.mac
+
+#=====================================================
+#Geometry Material
+#=====================================================
+
+# warning custom GateMaterials !
+/gate/geometry/setMaterialDatabase data/GateMaterials.db
+#/gate/geometry/setIonisationPotential Water 75 eV
+#/gate/geometry/setIonisationPotential G4_WATER 75 eV
+#/gate/geometry/setIonisationPotential ICRU_CompactBone 91.9 eV
+#/gate/geometry/setIonisationPotential Air_NIST 85.7 eV
+
+#=====================================================
+#World
+#=====================================================
+/gate/world/geometry/setXLength 1.0 m
+/gate/world/geometry/setYLength 1.0 m
+/gate/world/geometry/setZLength 4.0 m
+/gate/world/setMaterial G4_AIR
+
+
+#=====================================================
+#System
+#=====================================================
+
+/control/execute geometry/Kapton_Collimateur_Tungsten_CorrectionCharbel.mac
+/control/execute geometry/Kapton_Collimateur_Tungsten_CorrectionCharbel_Frite_PhaseSpaceActor.mac
+
+/control/execute geometry/SystemeDetectionApresLigne.mac
+
+#/control/execute geometry/Silicium_Detector.mac
+
+#/control/execute geometry/Frite_PhaseSpaceActor.mac
+
+#/control/execute geometry/Kapton_Collimateur.mac
+
+#/media/sf_PartageVbox8/GATE/souris/geometry/Kapton_Collimateur_Tungsten_CorrectionCharbel.mac
+
+
+#===========================================
+# CIBLE 
+#===========================================
+
+
+
+
+#====================================
+#Physics GATE
+#====================================
+
+#/control/execute physics_list/GateV8_BIC.mac
+/control/execute physics_list/GateV8_BIC_HP.mac
+#/control/execute physics_list/GateV7.mac
+
+#====================================
+
+
+#cut world
+/gate/physics/Gamma/SetCutInRegion world 10 mm
+/gate/physics/Electron/SetCutInRegion world 10 mm
+/gate/physics/Proton/SetCutInRegion world 10 mm
+/gate/physics/Positron/SetCutInRegion world 10 mm
+
+#/gate/physics/Gamma/SetCutInRegion colli1 10 mm
+#/gate/physics/Electron/SetCutInRegion colli1 10 mm
+#/gate/physics/Proton/SetCutInRegion colli1 10 mm
+#/gate/physics/Positron/SetCutInRegion colli1 10 mm
+
+
+/gate/physics/displayCuts
+
+
+
+/gate/physics/setEMin 0.1 keV
+/gate/physics/setEMax 10 GeV
+
+/gate/physics/setDEDXBinning 500
+/gate/physics/setLambdaBinning 500
+
+
+#====================================
+#Actor
+#====================================
+
+#/gate/output/allowNoOutput
+
+# Enregistre les particules qui traverses la ligne
+/control/execute geometry/Kapton_Collimateur_Tungsten_CorrectionCharbel_Frite_PhaseSpaceActor_Actor.mac
+
+#/control/execute geometry/Silicium_Detector_Actor.mac
+
+# Pemet de retrouver les émméteurs beta+
+/control/execute geometry/BetaPlus_Actor.mac
+
+# Stopping Power
+/control/execute geometry/Stopping_Power.mac
+
+# Pemet de caracteriser la ligne
+/control/execute geometry/SystemeDetectionApresLigne_Actor.mac
+
+
+#====================================
+#Initialization
+#====================================
+
+/gate/run/initialize
+
+
+#====================================
+#Source
+#====================================
+
+#type
+/gate/source/addSource pbeam gps
+/gate/source/pbeam/gps/particle proton
+
+
+#forme
+/gate/source/pbeam/gps/type Beam
+/gate/source/pbeam/gps/shape Circle
+
+/gate/source/pbeam/gps/pos/sigma_x 2 mm
+/gate/source/pbeam/gps/pos/sigma_y 3 mm
+
+#localisation
+/gate/source/pbeam/gps/centre 0 0 -0.01 mm
+/gate/source/pbeam/gps/direction 0 0 1
+
+#energie
+/gate/source/pbeam/gps/ene/mono 68 MeV
+#/gate/source/pbeam/gps/ene/type Gauss
+#/gate/source/pbeam/gps/ene/sigma 0.68 MeV
+
+#/gate/source/pbeam/gps/setTestFlag true
+
+#====================================
+#Initialization
+#====================================
+
+#/gate/run/initialize
+
+#graine 
+/gate/random/setEngineName MersenneTwister
+/gate/random/setEngineSeed auto
+
+#nb particule
+/gate/application/setTotalNumberOfPrimaries 100000
+#/gate/application/setTotalNumberOfPrimaries 10000000
+/gate/application/start
+

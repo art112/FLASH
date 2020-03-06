@@ -1,0 +1,16 @@
+/gate/source/addSource SingleGamma
+/gate/source/SingleGamma/setActivity 10. becquerel
+/gate/source/SingleGamma/gps/particle geantino
+/gate/source/SingleGamma/gps/energytype Mono
+/gate/source/SingleGamma/gps/monoenergy 0.511 MeV
+/gate/source/SingleGamma/gps/type Volume
+/gate/source/SingleGamma/gps/shape Sphere
+/gate/source/SingleGamma/gps/radius 0.000001 mm
+/gate/source/SingleGamma/gps/centre 0. 0. 1.6 cm
+/gate/source/SingleGamma/gps/angtype iso
+/gate/source/SingleGamma/gps/mintheta 90 deg
+/gate/source/SingleGamma/gps/maxtheta 90 deg
+/gate/source/SingleGamma/gps/minphi  90 deg
+/gate/source/SingleGamma/gps/maxphi  90 deg
+
+/gate/source/list

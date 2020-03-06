@@ -1,0 +1,18 @@
+#=====================================================
+# PHYSICS
+#=====================================================
+
+/gate/physics/addProcess PhotoElectric
+/gate/physics/addProcess Compton
+/gate/physics/addProcess GammaConversion
+/gate/physics/addProcess LowEnergyRayleighScattering
+
+/gate/physics/addProcess ElectronIonisation
+/gate/physics/addProcess Bremsstrahlung
+/gate/physics/addProcess PositronAnnihilationStd
+
+/gate/physics/addProcess MultipleScattering e+
+/gate/physics/addProcess MultipleScattering e-
+
+/gate/physics/processList Enabled
+/gate/physics/processList Initialized

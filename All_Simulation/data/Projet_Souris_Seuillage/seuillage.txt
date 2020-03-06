@@ -1,0 +1,4 @@
+-35000	-568    Air
+-568	-150    ICRU_LungInflated
+-150    821	RS-Muscle
+821	35000	RS-bone1
